@@ -1,0 +1,1245 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+/* Reseteo */
+::after,
+::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Adaptar font size html para usar em y rem*/
+html {
+    font-size: 62,5px;
+}
+
+/*Estilos Listas*/
+ul {
+    list-style-type: none;
+}
+
+/*Estilos Textos*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h2 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h4 {       
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600; 
+}
+
+p{
+    font-family: 'Geologica', sans-serif; 
+}
+
+/*Estilos Forms*/
+form {
+    font-family: 'Geologica', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+form ::placeholder {
+    font-style: italic;
+}
+
+
+/*Estilos Header*/
+.header-index {
+    position: relative;
+    height: 50rem;
+    background-image: url(../images/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title {
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    padding: 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.header-destinos {
+    height: 700px;
+    background-image: url(../images/africa.jpg);
+    background-size: cover;
+}
+.header-estilos {
+    height: 700px;
+    background-image: url(../images/buceo.jpg);
+    background-size: cover;
+}
+
+.header-nosotros {
+    background-color: #ffffff;
+    }
+
+.header-consultanos {
+background-color: #283a2c;
+}
+
+
+/*Estilos Nav*/
+nav {
+    font-family: 'Geologica', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbarSupportedContent {
+    justify-content: center;
+}
+
+.container-fluid {
+    padding: 0 60px;
+}
+
+/*Estilos Nav Desplegables*/
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.link:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dropdown-toggle:focus {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.dropdown-item {
+    font-size: small;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+/* Estilos boton consultanos */
+
+.boton {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+}
+.boton:hover {
+    background-color: #fc6202;
+}
+.boton:active {
+    background-color: #fc6202;
+}
+nav div ul a:last-child:hover {
+    text-decoration: none;
+}
+
+/*Estilos Sección Main Porqué Wanderlust*/
+.porque-wanderlust{
+    background-color: #283a2c;
+}
+.titulo-porque-wanderlust-container {
+    padding: 8rem 3rem 0rem 3rem;
+    color:antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+    /* Estilos grilla-porque-wanderlust y sus items ver media querys abajo */
+
+/* Fin Sección Main Porqué Wanderlust */
+
+/*Estilos Sección Ejemplos de Viajes*/
+
+.carousel-lg {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.carousel-sm {
+    /* margin-left: 3rem; */
+    margin-bottom: 5rem;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;  
+}
+.card {
+    margin: 1rem;
+    background-image: url(../images/tailandia.jpg);
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 600px;
+}
+.card2 {
+    background-image: url(../images/aventurate-tanzania.jpg);
+}
+.card3 {
+    background-image: url(../images/botswana.jpg);
+}
+.card-ejemplos-viajes {
+    width: 357px;
+    height: 617px;
+    margin: 1rem;
+    display: flex;
+    align-items: end;
+}
+.boton-ej {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+    color: #ffffff;
+}
+.boton-ej:hover {
+    background-color: #fc6202;
+}
+.ejemplos-viajes-titulo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: end;
+    margin: 5rem 3rem 3rem 1rem;
+}
+.ejemplos-viajes-titulo-container h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container h3 {
+    font-size: 3rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.ejemplos-viajes-titulo-container-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: end;
+    margin: 3rem 2rem 1rem 3rem;
+}
+.ejemplos-viajes-titulo-container-sm h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container-sm h3 {
+    font-size: 3rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container-sm p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+/* Estilos Sección Ejemplos de Viaje (Html Estilos de Viajes) */
+.seccion-ejemplos-viajes-estilos {
+    background-color: #f0efeb;
+}
+.articulos-ejemplos-viajes-2 h2 {
+    font-size: 3rem;
+    text-align: left;
+}
+.articulos-ejemplos-viajes-2 h3{
+    font-size: 2rem;
+    text-align: left;
+} 
+.desde-us {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.articulos-ejemplos-viajes-2 img {
+    width: 300px;
+    height: 617px;
+}
+/*Fin estilos Sección Ejemplos de Viajes*/
+
+/*Estilos Sección Opiniones y Suscripción*/
+.seccion-suscripcion {
+    background-image: url(../images/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+.seccion-suscripcion h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+.seccion-suscripcion h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tripadvisor-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.tripadvisor-container a {
+    color: black;
+}
+.tripadvisor-img {
+    width: 10rem;
+    height: auto;
+    margin-top: 1rem;
+}
+.estrellas-img {
+    margin-bottom: 1rem;
+}
+
+.suscripcion-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+.suscripcion-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.suscripcion-form-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+.suscripcion-form-container label:not([for="checkbox"]) {
+    display: none;
+}
+.suscripcion-form-acepta {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.suscripcion-form-grid-container input{
+    height: fit-content;  
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-suscripcion {
+        display: none;
+    }
+
+    .seccion-suscripcion-sm {
+        background-color: #f0efeb;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .seccion-suscripcion-sm h2 {
+        font-size: .8rem;
+    }
+    .seccion-suscripcion-sm h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .tripadvisor-container-sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem auto 5rem auto;
+    }
+    .tripadvisor-container-sm a {
+        color: black;
+    }
+    .tripadvisor-img-sm {  
+        width: 10rem;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .estrellas-img-sm {
+        margin-bottom: 1rem;
+    }
+
+    .suscripcion-container-sm {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 75vw;
+        max-width: 768px;
+        min-width: 320px;
+        margin: 5rem auto 5rem auto;
+    }
+    .suscripcion-form-container-sm {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        width: 75%vw;
+    }
+    .suscripcion-form-grid-container-sm {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+
+    .suscripcion-form-grid-container-sm input{
+        font-size: smaller;
+        height: fit-content;  
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 1px solid grey;
+    }
+    .suscripcion-form-grid-container-sm label {
+        font-size: smaller;
+    }
+    .suscripcion-form-container-sm label:not([for="checkbox"]) {
+        display: none;
+    }
+    .suscripcion-img-wrapper {
+        width: 100vw;
+        min-width: 320px;
+        max-width: 768px;
+    }
+    .suscripcion-img-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+    .suscripcion-form-acepta-sm {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .seccion-suscripcion-sm {
+        display: none;
+    }
+}
+
+/*Estilos Sección Contacta un Asesor*/
+.seccion-contacta-asesor {
+    background-color: #d9ddc6;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.seccion-contacta-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 0 3rem;
+}
+.contacta-asesor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+.contacta-asesor-container h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #283a2c;
+}
+.contacta-asesor-container p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #283a2c;
+}
+.llamanos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.llamanos-container p {
+    font-family:'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #283a2c;
+    margin: 0;
+}
+.llamanos-container p:last-child {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.llamanos-container img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: .5rem;
+}
+.escribinos-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.escribinos-container p {
+    font-family:'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #283a2c;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-contacta-asesor {
+        height: auto;
+    }
+    .seccion-contacta-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin: 5rem;
+    }
+    .contacta-asesor-container {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*Estilos Footer*/
+.footer {
+    background-color: #283a2c;
+    height: auto;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.footer-logo-container {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+.footer-logo-container img {
+    max-width: 100%;
+}
+.googlemap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto 1rem auto;
+    width: 50vw;
+}
+.googlemap-container iframe {
+    width: 100%;
+}
+.googlemap-container p {
+    font-size: smaller;
+}
+.footer-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    justify-content: center;
+    color: antiquewhite;
+}
+.footer-item-container ul {
+    padding: 0;
+    gap: .5rem;
+}
+.footer-direccion {
+    font-size: 1rem;
+    font-weight: 200;
+    color: antiquewhite;
+    text-align: center;
+}
+.footer-item-container h4 {
+    font-size: .8rem;
+    color: antiquewhite;
+}
+.footer-item-container p{
+    font-size: 1.3rem;
+}
+
+.footer-derechos-container {
+    font-size: .8rem;
+    font-weight: 200;
+    color: antiquewhite;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+}
+
+/*Inicio Estilos Destinos*/
+
+    /*Inicio Estilos Seccion África*/
+    .seccion-africa {
+        background-color: white;
+    }
+    .articulos-africa h2 {
+        font-size: 1rem;
+        text-align: left;
+    }
+    .articulos-africa h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: left;
+    }
+    .articulos-africa p {
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: left;
+    }
+    /*Fin Estilos Seccion África*/
+
+    /*Inicio Estilos Seccion Destinos*/
+    .seccion-destinos {
+        background-color: #f0efeb;
+    }
+    .articulos-africa h4 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .articulos-africa p {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .img-tanzania {
+        width: 487px;
+        height: 724px;
+    }
+    .img-destinos {
+        width: 280px;
+        height: 412px;
+    }
+    /*Fin Estilos Seccion Destinos*/
+/*Fin Estilos Destinos*/
+
+/*Inicio Estilos Estilos de Viaje*/
+
+    /*Inicio Sección Otros Estilos*/
+    .articulos-otros-estilos h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .articulos-otros-estilos h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .articulos-otros-estilos-2 h4 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .articulos-otros-estilos-2 p {
+        font-size: 1rem;
+        font-weight: 100;
+        text-align: center;
+    }
+    .escribinos-consultanos {
+        font-family:'Playfair Display', serif;
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: antiquewhite;
+        text-align: center;
+    }
+    /*Fin Sección Otros Estilos*/
+/*Fin Estilos Estilos de Viaje*/
+
+/* Inicio Estilos Nosotros*/
+.nav-nosotros a {
+    color: black;
+}
+.main-nosotros h1 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.main-nosotros h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+}
+/*Fin Estilos Nosotros*/
+
+/*Inicio Estilos Consultanos*/
+
+    /*Inicio Estilos Sección Main Formulario de Contacto*/
+    .main-consultanos {
+        background-color: #283a2c;
+    }
+    .articulos-consultanos {
+        color: antiquewhite;
+    }
+    .articulos-consultanos h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .articulos-consultanos h2 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family:'Playfair Display', serif;
+        text-align: center;
+    }
+    .llamanos-consultanos {
+        font-family:'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: antiquewhite;
+        text-align: center;
+    } 
+    .telefono-consultanos {
+        font-family:'Playfair Display', serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: antiquewhite;
+        text-align: center;
+    }
+    /*Fin Estilos Sección Main Formulario de Contacto*/
+
+    /*Inicio Estilos Sección Porqué Wanderlust Consultanos*/
+    .porque-wanderlust-consultanos {
+        background-color: #f0efeb;
+    }
+    .articulos-porque-wanderlust-consultanos{
+        color: black
+    }
+    .articulos-porque-wanderlust-consultanos-2 {
+        color: black
+    }
+    .articulos-porque-wanderlust-consultanos-2 p {
+        font-size: 0,5rem;
+        text-align: center;
+    }
+    .porque-wanderlust-consultanos h2{
+        text-align: center;
+    }
+    .porque-wanderlust-consultanos h3{
+        text-align: center;
+    }
+    .porque-wanderlust-consultanos h4{
+        text-align: center;
+    }
+    /*Fin Estilos Sección Porqué Wanderlust Consultanos*/
+/*Fin Estilos Consultanos*/
+
+/* Inicio media queries */
+@media screen and (min-width: 0px) and (max-width: 378px) {
+    /* Inicio medias Header */
+    .boton {
+        background-color: transparent;
+        padding: 0%;
+        margin-left: 0%;
+    }
+    .boton:hover{
+        background-color: transparent;
+        padding: 0%;
+        text-decoration: underline;
+    }
+    .boton:active {
+        background-color: transparent;
+        padding: 0%;
+        text-decoration: underline;
+    }
+    .navbar-brand img {
+        width: 91.3px;
+        height: 37.71px;
+    }
+    .navbar-toggler {
+        padding: 4px 4px;
+    }
+    .container-fluid {
+        padding: 0px 6px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    /* Fin medias header */
+    /* Inicio medias sección main porqué wanderlust */
+    .titulo-porque-wanderlust-container h2 {
+        font-size: 1rem;
+    }
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 2.5rem;
+    }
+        /* Inicio medias grilla porque wanderlust */
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            place-items: center;
+            margin: 0 3rem;
+            padding-bottom: 5rem;
+        }
+        .imagen-jirafa-container {
+            width: 80%;
+            margin: 2rem 0;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            width: 80%;
+            text-align: center;
+            margin: 1rem;
+            color: antiquewhite;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        #experiencias,
+        #atencion,
+        #asistencia {
+            width: 80%;
+            text-align: center;
+            color: antiquewhite;
+            margin: 1rem;
+        }
+        /* Fin grilla porque wanderlust */
+    /* Fin medias sección main porqué wanderlust */
+}
+
+@media screen and (min-width: 379px) and (max-width: 576px) {
+     /* Inicio medias header    */
+    .boton {
+        background-color: transparent;
+        padding: 0%;
+    }
+    .boton:hover{
+        background-color: transparent;
+        padding: none;
+        text-decoration: underline;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+    .container-fluid {
+        padding: 0 20px;
+    }
+    /* Fin medias header */
+    /* Inicio medias sección main porqué wanderlust */
+    .titulo-porque-wanderlust-container h2 {
+        font-size: 1.5rem;
+    }
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3rem;
+    }
+        /* Inicio grilla porque wanderlust */
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            place-items: center;
+            margin: 0 3rem;
+            padding-bottom: 5rem;
+        }
+        .imagen-jirafa-container {
+            width: 80%;
+            margin: 2rem 0;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            width: 80%;
+            text-align: center;
+            margin: 1rem;
+            color: antiquewhite;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        #experiencias,
+        #atencion,
+        #asistencia {
+            width: 80%;
+            text-align: center;
+            color: antiquewhite;
+            margin: 1rem;
+        }
+        /* Fin grilla porque wanderlust */
+    /* Fin medias sección main porqué wanderlust */
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    /* Inicio medias header */
+    .boton {
+        background-color: transparent;
+        padding: 0%;
+    }
+    .boton:hover{
+        background-color: transparent;
+        padding: none;
+        text-decoration: underline;
+    }
+    /* Fin medias header */
+    /* Inicio medias sección main porqué wanderlust  */
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3.5;
+    }
+        /* Inicio grilla porque wanderlust */
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            place-items: center;
+            margin: 0 3rem;
+            padding-bottom: 5rem;
+        }
+        .imagen-jirafa-container {
+            width: 80%;
+            margin: 2rem 0;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            width: 80%;
+            text-align: center;
+            margin: 1rem;
+            color: antiquewhite;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        #experiencias,
+        #atencion,
+        #asistencia {
+            width: 80%;
+            text-align: center;
+            color: antiquewhite;
+            margin: 1rem;
+        }
+        /* Fin grilla porque wanderlust */
+    /* Fin medias sección main porqué wanderlust */
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    /* Inicio medias header */
+    .boton {
+        background-color: transparent;
+        padding: 0;
+    }
+    .boton:hover{
+        background-color: transparent;
+        padding: 0;
+        text-decoration: underline;
+    }
+    /* Fin medias header */
+    /* Inicio sección main porqué wanderlust */
+        /* Inicio grilla porque wanderlust */
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            place-items: center;
+            margin: 0 3rem;
+            padding-bottom: 5rem;
+        }
+        .imagen-jirafa-container {
+            width: 80%;
+            margin: 2rem 0;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            width: 80%;
+            text-align: center;
+            margin: 1rem;
+            color: antiquewhite;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        #experiencias,
+        #atencion,
+        #asistencia {
+            width: 80%;
+            text-align: center;
+            color: antiquewhite;
+            margin: 1rem;
+        }
+        /* Fin grilla porque wanderlust */
+    /* Fin sección main porqué wanderlust */
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) { 
+    /* Inicio sección main porqué wanderlust */ 
+    .titulo-porque-wanderlust-container {
+        padding: 5rem 3rem 0 3rem;
+    }
+        /* Inicio grilla porque wanderlust */
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
+            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
+            height: 80rem;
+            place-items: center;
+            align-items: start;
+            margin: auto;
+        }
+        .imagen-jirafa-container {
+            padding: 2rem;
+            grid-column: 3/4;
+            grid-row: 1/4;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            padding: 1rem 0 0 1rem;
+            color:antiquewhite;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        .list-porque-wanderlust-container {
+            color:antiquewhite;
+            width: 17rem;
+            text-align: center;
+        }
+        .list-porque-wanderlust-container p {
+            font-size: 0,5rem;
+            text-align: center;
+        }
+        #experiencias {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            padding: 2rem 4rem 0 0;
+        }
+        #atencion {
+            grid-column: 2/3;
+            grid-row: 6/7;
+            padding: 2rem 0 0 4rem
+        }
+        #asistencia{
+            grid-column: 3/4;
+            grid-row: 8/9;
+            padding: 0 1rem 0 3rem;
+        }
+        /* Fin grilla porque wanderlust */
+    /* Fin sección main porqué wanderlust */
+    }   
+    
+
+@media screen and (min-width: 1201px) {
+    /* Inicio grilla porque wanderlust */
+        /* Inicio sección main porqué wanderlust */
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
+            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
+            height: 80rem;
+            place-items: center;
+            align-items: start;
+            margin: auto;
+        }
+        .imagen-jirafa-container {
+            padding: 2rem;
+            grid-column: 3/4;
+            grid-row: 1/4;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            padding: 1rem 0 0 1rem;
+            color:antiquewhite;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.4rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1.2rem;
+            text-align: left;
+        }
+        .list-porque-wanderlust-container {
+            color:antiquewhite;
+            width: 17rem;
+            text-align: center;
+        }
+        .list-porque-wanderlust-container p {
+            font-size: 0,5rem;
+            text-align: center;
+        }
+        #experiencias {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            padding: 2rem 4rem 0 0;
+        }
+        #atencion {
+            grid-column: 2/3;
+            grid-row: 6/7;
+            padding: 2rem 0 0 4rem
+        }
+        #asistencia{
+            grid-column: 3/4;
+            grid-row: 8/9;
+            padding: 0 1rem 0 3rem;
+        }
+        /* Fin grilla porque wanderlust */
+    /* Fin sección main porqué wanderlust */
+}
+
+@media screen  and (min-width: 1401px){
+    /* Inicio sección main porqué wanderlust */
+        /* Inicio grilla porque wanderlust */
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
+            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
+            height: 80rem;
+            place-items: center;
+            align-items: start;
+            margin: auto;
+        }
+        .imagen-jirafa-container {
+            padding: 2rem;
+            grid-column: 3/4;
+            grid-row: 1/4;
+        }
+        .imagen-jirafa {
+            width: 90%;
+            height: auto;
+            margin: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            padding: 1rem 0 0 1rem;
+            color:antiquewhite;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        .list-porque-wanderlust-container {
+            color:antiquewhite;
+            width: 17rem;
+            text-align: center;
+        }
+        .list-porque-wanderlust-container p {
+            font-size: 0,5rem;
+            text-align: center;
+        }
+        #experiencias {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            padding: 2rem 4rem 0 0;
+        }
+        #atencion {
+            grid-column: 2/3;
+            grid-row: 6/7;
+            padding: 2rem 0 0 4rem
+        }
+        #asistencia{
+            grid-column: 3/4;
+            grid-row: 8/9;
+            padding: 0 1rem 0 3rem;
+        }
+        /* Fin grilla porque wanderlust */
+}    
+    /* Fin sección main porqué wanderlust */
+/* Fin media querys */
