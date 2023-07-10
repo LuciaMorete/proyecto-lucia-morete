@@ -104,6 +104,75 @@ form ::placeholder {
 background-color: #283a2c;
 }
 
+@media screen and (min-width: 0px) and (max-width: 378px) {
+    .boton {
+    background-color: transparent;
+    padding: 0%;
+    margin-left: 0%;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: 0%;
+    text-decoration: underline;
+}
+.boton:active {
+    background-color: transparent;
+    padding: 0%;
+    text-decoration: underline;
+}
+.navbar-brand img {
+    width: 91.3px;
+    height: 37.71px;
+}
+.navbar-toggler {
+    padding: 4px 4px;
+}
+.container-fluid {
+    padding: 0px 6px;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+}
+@media screen and (min-width: 379px) and (max-width: 576px) {
+    .boton {
+    background-color: transparent;
+    padding: 0%;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: none;
+    text-decoration: underline;
+}
+header h1 {
+    font-size: 3rem;
+}
+.container-fluid {
+    padding: 0 20px;
+}
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+.boton {
+    background-color: transparent;
+    padding: 0%;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: none;
+    text-decoration: underline;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+.boton {
+    background-color: transparent;
+    padding: 0;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+}
+}
 
 /*Estilos Nav*/
 nav {
@@ -190,9 +259,152 @@ nav div ul a:last-child:hover {
     flex-direction: column;
     text-align: center;
 }
-    /* Estilos grilla-porque-wanderlust y sus items ver media querys abajo */
+@media screen and (min-width: 0px) and (max-width: 378px) {
+    .titulo-porque-wanderlust-container h2 {
+        font-size: 1rem;
+    }
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 379px) and (max-width: 576px) {
+    .titulo-porque-wanderlust-container h2 {
+        font-size: 1.5rem;
+    }
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3.5;
+    }     
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3.5;
+    }     
+}    
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .titulo-porque-wanderlust-container {
+        padding: 5rem 3rem 0 3rem;
+    }
+}
 
-/* Fin Sección Main Porqué Wanderlust */
+    /* Inicio media querys grilla porque wanderlust */
+    @media screen and (max-width: 991px) {
+    .grilla-porque-wanderlust {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        margin: 0 3rem;
+        padding-bottom: 5rem;
+    }
+    .imagen-jirafa-container {
+        width: 80%;
+        margin: 2rem 0;
+    }
+    .imagen-jirafa {
+        width: 100%;
+        height: auto;
+    }
+    .parrafos-porque-wanderlust-container {
+        width: 80%;
+        text-align: center;
+        margin: 1rem;
+        color: antiquewhite;
+    }
+    .parrafos-porque-wanderlust-container p:first-child {
+        font-size: 1.2rem;
+    }
+    .parrafo-porque-wanderlust {
+        font-size: 1rem;
+        text-align: left;
+    }
+    #experiencias,
+    #atencion,
+    #asistencia {
+        width: 80%;
+        text-align: center;
+        color: antiquewhite;
+        margin: 1rem;
+    }
+    }
+    @media screen and (min-width: 992px) { 
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
+            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
+            height: 80rem;
+            place-items: center;
+            align-items: start;
+            margin: auto;
+        }
+        .imagen-jirafa-container {
+            padding: 2rem;
+            grid-column: 3/4;
+            grid-row: 1/4;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            padding: 1rem 0 0 1rem;
+            color:antiquewhite;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        .list-porque-wanderlust-container {
+            color:antiquewhite;
+            width: 17rem;
+            text-align: center;
+        }
+        .list-porque-wanderlust-container p {
+            font-size: 0,5rem;
+            text-align: center;
+        }
+        #experiencias {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            padding: 2rem 4rem 0 0;
+        }
+        #atencion {
+            grid-column: 2/3;
+            grid-row: 6/7;
+            padding: 2rem 0 0 4rem
+        }
+        #asistencia{
+            grid-column: 3/4;
+            grid-row: 8/9;
+            padding: 0 1rem 0 3rem;
+        }
+    }       
+    @media screen and (min-width: 1201px) {
+            .parrafos-porque-wanderlust-container p:first-child {
+                font-size: 1.4rem;
+            }
+            .parrafo-porque-wanderlust {
+                font-size: 1.2rem;
+            }
+    }
+    @media screen  and (min-width: 1401px){
+            .imagen-jirafa {
+                width: 90%;
+                height: auto;
+                margin: auto;
+            }       
+    }  
+    /* Fin media querys grilla porque wanderlust */  
+/* Fin sección main porqué wanderlust */
 
 /*Estilos Sección Ejemplos de Viajes*/
 
@@ -201,8 +413,7 @@ nav div ul a:last-child:hover {
     margin-bottom: 5rem;
 }
 .carousel-sm {
-    /* margin-left: 3rem; */
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem auto;
 }
 .cards-wrapper {
     display: flex;
@@ -212,10 +423,8 @@ nav div ul a:last-child:hover {
     margin: 1rem;
     background-image: url(../images/tailandia.jpg);
     background-size: cover;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    min-height: 600px;
+    width: 357px;
+    height: 617px;
 }
 .card2 {
     background-image: url(../images/aventurate-tanzania.jpg);
@@ -281,28 +490,13 @@ nav div ul a:last-child:hover {
     font-weight: 200;
 }
 
-
-/* Estilos Sección Ejemplos de Viaje (Html Estilos de Viajes) */
-.seccion-ejemplos-viajes-estilos {
-    background-color: #f0efeb;
+@media screen and (max-width: 768px) {
+    .card-sm{
+    width: 267.75px;
+    height: 462.75;
+    margin: 0 auto;
+    }
 }
-.articulos-ejemplos-viajes-2 h2 {
-    font-size: 3rem;
-    text-align: left;
-}
-.articulos-ejemplos-viajes-2 h3{
-    font-size: 2rem;
-    text-align: left;
-} 
-.desde-us {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-.articulos-ejemplos-viajes-2 img {
-    width: 300px;
-    height: 617px;
-}
-/*Fin estilos Sección Ejemplos de Viajes*/
 
 /*Estilos Sección Opiniones y Suscripción*/
 .seccion-suscripcion {
@@ -589,7 +783,7 @@ nav div ul a:last-child:hover {
 .footer-logo-container img {
     max-width: 100%;
 }
-.googlemap-container {
+.footer-googlemap-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -637,7 +831,7 @@ nav div ul a:last-child:hover {
     margin: 1rem auto 0 auto;
 }
 
-/*Inicio Estilos Destinos*/
+/*Inicio Estilos HTML Destinos*/
 
     /*Inicio Estilos Seccion África*/
     .seccion-africa {
@@ -680,9 +874,9 @@ nav div ul a:last-child:hover {
         height: 412px;
     }
     /*Fin Estilos Seccion Destinos*/
-/*Fin Estilos Destinos*/
+/*Fin Estilos HTML Destinos*/
 
-/*Inicio Estilos Estilos de Viaje*/
+/*Inicio Estilos HTML Estilos*/
 
     /*Inicio Sección Otros Estilos*/
     .articulos-otros-estilos h2 {
@@ -711,9 +905,30 @@ nav div ul a:last-child:hover {
         text-align: center;
     }
     /*Fin Sección Otros Estilos*/
-/*Fin Estilos Estilos de Viaje*/
+    /* Inicio Estilos Sección Ejemplos de Viaje (Html Estilos de Viajes) */
+    .seccion-ejemplos-viajes-estilos {
+        background-color: #f0efeb;
+    }
+    .articulos-ejemplos-viajes-2 h2 {
+        font-size: 3rem;
+        text-align: left;
+    }
+    .articulos-ejemplos-viajes-2 h3{
+        font-size: 2rem;
+        text-align: left;
+    } 
+    .desde-us {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .articulos-ejemplos-viajes-2 img {
+        width: 300px;
+        height: 617px;
+    }
+    /*Fin estilos Sección Ejemplos de Viajes (Html Estilos de Viajes)*/
+/*Fin Estilos HTML Estilos*/
 
-/* Inicio Estilos Nosotros*/
+/* Inicio Estilos HTML Nosotros*/
 .nav-nosotros a {
     color: black;
 }
@@ -728,9 +943,9 @@ nav div ul a:last-child:hover {
     font-weight: 600;
     text-align: center;
 }
-/*Fin Estilos Nosotros*/
+/*Fin Estilos HTML Nosotros*/
 
-/*Inicio Estilos Consultanos*/
+/*Inicio Estilos HTML Consultanos*/
 
     /*Inicio Estilos Sección Main Formulario de Contacto*/
     .main-consultanos {
@@ -789,457 +1004,4 @@ nav div ul a:last-child:hover {
         text-align: center;
     }
     /*Fin Estilos Sección Porqué Wanderlust Consultanos*/
-/*Fin Estilos Consultanos*/
-
-/* Inicio media queries */
-@media screen and (min-width: 0px) and (max-width: 378px) {
-    /* Inicio medias Header */
-    .boton {
-        background-color: transparent;
-        padding: 0%;
-        margin-left: 0%;
-    }
-    .boton:hover{
-        background-color: transparent;
-        padding: 0%;
-        text-decoration: underline;
-    }
-    .boton:active {
-        background-color: transparent;
-        padding: 0%;
-        text-decoration: underline;
-    }
-    .navbar-brand img {
-        width: 91.3px;
-        height: 37.71px;
-    }
-    .navbar-toggler {
-        padding: 4px 4px;
-    }
-    .container-fluid {
-        padding: 0px 6px;
-    }
-    header h1 {
-        font-size: 2.5rem;
-    }
-    /* Fin medias header */
-    /* Inicio medias sección main porqué wanderlust */
-    .titulo-porque-wanderlust-container h2 {
-        font-size: 1rem;
-    }
-    .titulo-porque-wanderlust-container h3 {
-        font-size: 2.5rem;
-    }
-        /* Inicio medias grilla porque wanderlust */
-        .grilla-porque-wanderlust {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            place-items: center;
-            margin: 0 3rem;
-            padding-bottom: 5rem;
-        }
-        .imagen-jirafa-container {
-            width: 80%;
-            margin: 2rem 0;
-        }
-        .imagen-jirafa {
-            width: 100%;
-            height: auto;
-        }
-        .parrafos-porque-wanderlust-container {
-            width: 80%;
-            text-align: center;
-            margin: 1rem;
-            color: antiquewhite;
-        }
-        .parrafos-porque-wanderlust-container p:first-child {
-            font-size: 1.2rem;
-        }
-        .parrafo-porque-wanderlust {
-            font-size: 1rem;
-            text-align: left;
-        }
-        #experiencias,
-        #atencion,
-        #asistencia {
-            width: 80%;
-            text-align: center;
-            color: antiquewhite;
-            margin: 1rem;
-        }
-        /* Fin grilla porque wanderlust */
-    /* Fin medias sección main porqué wanderlust */
-}
-
-@media screen and (min-width: 379px) and (max-width: 576px) {
-     /* Inicio medias header    */
-    .boton {
-        background-color: transparent;
-        padding: 0%;
-    }
-    .boton:hover{
-        background-color: transparent;
-        padding: none;
-        text-decoration: underline;
-    }
-    header h1 {
-        font-size: 3rem;
-    }
-    .container-fluid {
-        padding: 0 20px;
-    }
-    /* Fin medias header */
-    /* Inicio medias sección main porqué wanderlust */
-    .titulo-porque-wanderlust-container h2 {
-        font-size: 1.5rem;
-    }
-    .titulo-porque-wanderlust-container h3 {
-        font-size: 3rem;
-    }
-        /* Inicio grilla porque wanderlust */
-        .grilla-porque-wanderlust {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            place-items: center;
-            margin: 0 3rem;
-            padding-bottom: 5rem;
-        }
-        .imagen-jirafa-container {
-            width: 80%;
-            margin: 2rem 0;
-        }
-        .imagen-jirafa {
-            width: 100%;
-            height: auto;
-        }
-        .parrafos-porque-wanderlust-container {
-            width: 80%;
-            text-align: center;
-            margin: 1rem;
-            color: antiquewhite;
-        }
-        .parrafos-porque-wanderlust-container p:first-child {
-            font-size: 1.2rem;
-        }
-        .parrafo-porque-wanderlust {
-            font-size: 1rem;
-            text-align: left;
-        }
-        #experiencias,
-        #atencion,
-        #asistencia {
-            width: 80%;
-            text-align: center;
-            color: antiquewhite;
-            margin: 1rem;
-        }
-        /* Fin grilla porque wanderlust */
-    /* Fin medias sección main porqué wanderlust */
-}
-
-@media screen and (min-width: 577px) and (max-width: 768px) {
-    /* Inicio medias header */
-    .boton {
-        background-color: transparent;
-        padding: 0%;
-    }
-    .boton:hover{
-        background-color: transparent;
-        padding: none;
-        text-decoration: underline;
-    }
-    /* Fin medias header */
-    /* Inicio medias sección main porqué wanderlust  */
-    .titulo-porque-wanderlust-container h3 {
-        font-size: 3.5;
-    }
-        /* Inicio grilla porque wanderlust */
-        .grilla-porque-wanderlust {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            place-items: center;
-            margin: 0 3rem;
-            padding-bottom: 5rem;
-        }
-        .imagen-jirafa-container {
-            width: 80%;
-            margin: 2rem 0;
-        }
-        .imagen-jirafa {
-            width: 100%;
-            height: auto;
-        }
-        .parrafos-porque-wanderlust-container {
-            width: 80%;
-            text-align: center;
-            margin: 1rem;
-            color: antiquewhite;
-        }
-        .parrafos-porque-wanderlust-container p:first-child {
-            font-size: 1.2rem;
-        }
-        .parrafo-porque-wanderlust {
-            font-size: 1rem;
-            text-align: left;
-        }
-        #experiencias,
-        #atencion,
-        #asistencia {
-            width: 80%;
-            text-align: center;
-            color: antiquewhite;
-            margin: 1rem;
-        }
-        /* Fin grilla porque wanderlust */
-    /* Fin medias sección main porqué wanderlust */
-}
-
-@media screen and (min-width: 769px) and (max-width: 991px) {
-    /* Inicio medias header */
-    .boton {
-        background-color: transparent;
-        padding: 0;
-    }
-    .boton:hover{
-        background-color: transparent;
-        padding: 0;
-        text-decoration: underline;
-    }
-    /* Fin medias header */
-    /* Inicio sección main porqué wanderlust */
-        /* Inicio grilla porque wanderlust */
-        .grilla-porque-wanderlust {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            place-items: center;
-            margin: 0 3rem;
-            padding-bottom: 5rem;
-        }
-        .imagen-jirafa-container {
-            width: 80%;
-            margin: 2rem 0;
-        }
-        .imagen-jirafa {
-            width: 100%;
-            height: auto;
-        }
-        .parrafos-porque-wanderlust-container {
-            width: 80%;
-            text-align: center;
-            margin: 1rem;
-            color: antiquewhite;
-        }
-        .parrafos-porque-wanderlust-container p:first-child {
-            font-size: 1.2rem;
-        }
-        .parrafo-porque-wanderlust {
-            font-size: 1rem;
-            text-align: left;
-        }
-        #experiencias,
-        #atencion,
-        #asistencia {
-            width: 80%;
-            text-align: center;
-            color: antiquewhite;
-            margin: 1rem;
-        }
-        /* Fin grilla porque wanderlust */
-    /* Fin sección main porqué wanderlust */
-}
-
-@media screen and (min-width: 992px) and (max-width:1200px) { 
-    /* Inicio sección main porqué wanderlust */ 
-    .titulo-porque-wanderlust-container {
-        padding: 5rem 3rem 0 3rem;
-    }
-        /* Inicio grilla porque wanderlust */
-        .grilla-porque-wanderlust {
-            display: grid;
-            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
-            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
-            height: 80rem;
-            place-items: center;
-            align-items: start;
-            margin: auto;
-        }
-        .imagen-jirafa-container {
-            padding: 2rem;
-            grid-column: 3/4;
-            grid-row: 1/4;
-        }
-        .imagen-jirafa {
-            width: 100%;
-            height: auto;
-        }
-        .parrafos-porque-wanderlust-container {
-            padding: 1rem 0 0 1rem;
-            color:antiquewhite;
-            grid-column: 4/5;
-            grid-row: 2/4;
-        }
-        .parrafos-porque-wanderlust-container p:first-child {
-            font-size: 1.2rem;
-        }
-        .parrafo-porque-wanderlust {
-            font-size: 1rem;
-            text-align: left;
-        }
-        .list-porque-wanderlust-container {
-            color:antiquewhite;
-            width: 17rem;
-            text-align: center;
-        }
-        .list-porque-wanderlust-container p {
-            font-size: 0,5rem;
-            text-align: center;
-        }
-        #experiencias {
-            grid-column: 2/3;
-            grid-row: 3/4;
-            padding: 2rem 4rem 0 0;
-        }
-        #atencion {
-            grid-column: 2/3;
-            grid-row: 6/7;
-            padding: 2rem 0 0 4rem
-        }
-        #asistencia{
-            grid-column: 3/4;
-            grid-row: 8/9;
-            padding: 0 1rem 0 3rem;
-        }
-        /* Fin grilla porque wanderlust */
-    /* Fin sección main porqué wanderlust */
-    }   
-    
-
-@media screen and (min-width: 1201px) {
-    /* Inicio grilla porque wanderlust */
-        /* Inicio sección main porqué wanderlust */
-        .grilla-porque-wanderlust {
-            display: grid;
-            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
-            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
-            height: 80rem;
-            place-items: center;
-            align-items: start;
-            margin: auto;
-        }
-        .imagen-jirafa-container {
-            padding: 2rem;
-            grid-column: 3/4;
-            grid-row: 1/4;
-        }
-        .imagen-jirafa {
-            width: 100%;
-            height: auto;
-        }
-        .parrafos-porque-wanderlust-container {
-            padding: 1rem 0 0 1rem;
-            color:antiquewhite;
-            grid-column: 4/5;
-            grid-row: 2/4;
-        }
-        .parrafos-porque-wanderlust-container p:first-child {
-            font-size: 1.4rem;
-        }
-        .parrafo-porque-wanderlust {
-            font-size: 1.2rem;
-            text-align: left;
-        }
-        .list-porque-wanderlust-container {
-            color:antiquewhite;
-            width: 17rem;
-            text-align: center;
-        }
-        .list-porque-wanderlust-container p {
-            font-size: 0,5rem;
-            text-align: center;
-        }
-        #experiencias {
-            grid-column: 2/3;
-            grid-row: 3/4;
-            padding: 2rem 4rem 0 0;
-        }
-        #atencion {
-            grid-column: 2/3;
-            grid-row: 6/7;
-            padding: 2rem 0 0 4rem
-        }
-        #asistencia{
-            grid-column: 3/4;
-            grid-row: 8/9;
-            padding: 0 1rem 0 3rem;
-        }
-        /* Fin grilla porque wanderlust */
-    /* Fin sección main porqué wanderlust */
-}
-
-@media screen  and (min-width: 1401px){
-    /* Inicio sección main porqué wanderlust */
-        /* Inicio grilla porque wanderlust */
-        .grilla-porque-wanderlust {
-            display: grid;
-            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
-            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
-            height: 80rem;
-            place-items: center;
-            align-items: start;
-            margin: auto;
-        }
-        .imagen-jirafa-container {
-            padding: 2rem;
-            grid-column: 3/4;
-            grid-row: 1/4;
-        }
-        .imagen-jirafa {
-            width: 90%;
-            height: auto;
-            margin: auto;
-        }
-        .parrafos-porque-wanderlust-container {
-            padding: 1rem 0 0 1rem;
-            color:antiquewhite;
-            grid-column: 4/5;
-            grid-row: 2/4;
-        }
-        .parrafos-porque-wanderlust-container p:first-child {
-            font-size: 1.2rem;
-        }
-        .parrafo-porque-wanderlust {
-            font-size: 1rem;
-            text-align: left;
-        }
-        .list-porque-wanderlust-container {
-            color:antiquewhite;
-            width: 17rem;
-            text-align: center;
-        }
-        .list-porque-wanderlust-container p {
-            font-size: 0,5rem;
-            text-align: center;
-        }
-        #experiencias {
-            grid-column: 2/3;
-            grid-row: 3/4;
-            padding: 2rem 4rem 0 0;
-        }
-        #atencion {
-            grid-column: 2/3;
-            grid-row: 6/7;
-            padding: 2rem 0 0 4rem
-        }
-        #asistencia{
-            grid-column: 3/4;
-            grid-row: 8/9;
-            padding: 0 1rem 0 3rem;
-        }
-        /* Fin grilla porque wanderlust */
-}    
-    /* Fin sección main porqué wanderlust */
-/* Fin media querys */
+/*Fin Estilos HTML Consultanos*/
