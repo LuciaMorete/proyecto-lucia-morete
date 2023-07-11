@@ -104,6 +104,76 @@ form ::placeholder {
 background-color: #283a2c;
 }
 
+/*Estilos Nav*/
+nav {
+    font-family: 'Geologica', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbarSupportedContent {
+    justify-content: center;
+}
+
+.container-fluid {
+    padding: 0 60px;
+}
+
+/*Estilos Nav Desplegables*/
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.link:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dropdown-toggle:focus {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.dropdown-item {
+    font-size: small;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+/* Estilos boton consultanos */
+.boton {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+}
+.boton:hover {
+    background-color: #fc6202;
+}
+.boton:active {
+    background-color: #fc6202;
+}
+nav div ul a:last-child:hover {
+    text-decoration: none;
+}
 @media screen and (min-width: 0px) and (max-width: 378px) {
     .boton {
     background-color: transparent;
@@ -172,78 +242,6 @@ header h1 {
     padding: 0;
     text-decoration: underline;
 }
-}
-
-/*Estilos Nav*/
-nav {
-    font-family: 'Geologica', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-.navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-#navbarSupportedContent {
-    justify-content: center;
-}
-
-.container-fluid {
-    padding: 0 60px;
-}
-
-/*Estilos Nav Desplegables*/
-.link {
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Geologica', sans-serif;
-    font-weight: 600;
-}
-
-.link:hover {
-    text-decoration: underline;
-    color: #ffffff;
-}
-.link:active {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.dropdown-toggle:focus {
-    text-decoration: none;
-    color: #ffffff; 
-}
-
-.dropdown-item {
-    font-size: small;
-    font-weight: 600;
-}
-
-.dropdown-menu {
-    border: none;
-}
-
-/* Estilos boton consultanos */
-
-.boton {
-    background-color: #283a2c;
-    border: none;
-    border-radius: 1.5rem;
-    padding: 6px 15px 6px;
-    font-size: small;
-}
-.boton:hover {
-    background-color: #fc6202;
-}
-.boton:active {
-    background-color: #fc6202;
-}
-nav div ul a:last-child:hover {
-    text-decoration: none;
 }
 
 /*Estilos Sección Main Porqué Wanderlust*/
@@ -831,6 +829,10 @@ nav div ul a:last-child:hover {
     margin: 1rem auto 0 auto;
 }
 
+.footer-telefono-lg-container {
+    margin-top: 3rem;
+}
+
 /*Inicio Estilos HTML Destinos*/
 
     /*Inicio Estilos Seccion África*/
@@ -929,19 +931,200 @@ nav div ul a:last-child:hover {
 /*Fin Estilos HTML Estilos*/
 
 /* Inicio Estilos HTML Nosotros*/
+/*Estilos Header*/
+.header-nosotros {
+    height: 15rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .nav-nosotros a {
     color: black;
 }
+.nav-nosotros a:hover {
+    color: black;
+}
+.nav-nosotros a:active {
+    color: black;
+}
+.boton-ns {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+}
+.boton-ns:hover {
+    background-color: #fc6202;
+}
+.boton:active {
+    background-color: #fc6202;
+}
 .main-nosotros h1 {
     font-family: 'Geologica', sans-serif;
-    font-size: 1.5rem;
     font-weight: 600;
+    color: black;
+    font-size: 1rem;
 }
 .main-nosotros h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
     font-weight: 600;
     text-align: center;
+    color: black;
+    font-size: 6rem;
+}
+.parrafos-nosotros-container {
+    color: black;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.parrafos-nosotros-container p:first-child {
+    text-align: left;
+    font-size: 1.4rem;
+}
+.nosotros-img-wrapper {
+    width: 100vw;
+    margin: 8rem 0 8rem 0;
+}
+.nosotros-img-wrapper img {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+.nosotros-titulo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0 8rem 0;  
+}
+.nosotros-video-container {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+@media screen and (max-width: 570px) {
+    .main-nosotros h1 {
+        font-size: 1rem;
+    }
+    .main-nosotros h2 {
+        font-size: 3rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: .8rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 571px) and (max-width: 768px){
+    .main-nosotros h1 {
+        font-size: 1rem;
+    }
+    .main-nosotros h2 {
+        font-size: 3rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .main-nosotros h1 {
+        font-size: 1.5rem;
+    }
+    .main-nosotros h2 {
+        font-size: 3.5rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .main-nosotros h1 {
+        font-size: 1rem;
+    }
+    .main-nosotros h2 {
+        font-size: 6rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1.2rem;
+    }
+    .parrafos-nosotros-container:first-child {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+    .main-nosotros h1 {
+        font-size: 1.5rem;
+    }
+    .main-nosotros h2 {
+        font-size: 7rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1.3rem;
+    }
+    .parrafos-nosotros-container:first-child {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .main-nosotros h1 {
+        font-size: 1.8rem;
+    }
+    .main-nosotros h2 {
+        font-size: 8rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1.4rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1.6rem;
+}
+}
+
+@media screen and (max-width: 991px) {
+    .boton-ns {
+    background-color: transparent;
+    padding: 0%;
+    margin-left: 0%;
+    color: black;
+    }
+    .boton-ns:hover{
+        background-color: transparent;
+        padding: 0%;
+        color: black;
+        text-decoration: underline;
+    }
+    .boton-ns:active {
+        background-color: transparent;
+        padding: 0%;
+        color: black;
+        text-decoration: underline;
+    }
+    .nosotros-link-consultanos a {
+        color: black
+    }
+    .nosotros-link-consultanos a:hover {
+        color: black;
+    }
+    .nosotros-link-consultanos a:active {
+        color: black;
+    }
 }
 /*Fin Estilos HTML Nosotros*/
 
