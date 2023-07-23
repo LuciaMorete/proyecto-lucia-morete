@@ -1,0 +1,1723 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+/* Reseteo */
+::after,
+::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*Adaptar font size html para usar em y rem*/
+html {
+    font-size: 62,5px;
+}
+
+/*Estilos Listas*/
+ul {
+    list-style-type: none;
+}
+
+/*Estilos Textos*/
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h2 {
+    font-family: 'Geologica', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+h4 {       
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 600; 
+}
+
+p{
+    font-family: 'Geologica', sans-serif; 
+}
+
+/*Estilos Forms*/
+form {
+    font-family: 'Geologica', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+form ::placeholder {
+    font-style: italic;
+}
+
+
+/*Estilos Header*/
+.header-index {
+    position: relative;
+    height: 50rem;
+    background-image: url(../images/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-title {
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    padding: 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.header-destinos {
+    position: relative;
+    height: 50rem;
+    background-image: url(../images/africa.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-estilos {
+    position: relative;
+    height: 50rem;
+    background-image: url(../images/buceo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-nosotros {
+    height: 15rem;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-consultanos {
+background-color: #283a2c;
+height: 15rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/*Estilos Nav*/
+nav {
+    font-family: 'Geologica', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbarSupportedContent {
+    justify-content: center;
+}
+
+.container-fluid {
+    padding: 0 60px;
+}
+
+/*Estilos Nav Desplegables*/
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 600;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+.link:active {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.dropdown-toggle:focus {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+.dropdown-item {
+    font-size: small;
+    font-weight: 600;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+/* Estilos boton consultanos */
+.boton {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+}
+.boton:hover {
+    background-color: #fc6202;
+}
+.boton:active {
+    background-color: #fc6202;
+}
+nav div ul a:last-child:hover {
+    text-decoration: none;
+}
+@media screen and (min-width: 0px) and (max-width: 378px) {
+    .boton {
+    background-color: transparent;
+    padding: 0%;
+    margin-left: 0%;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: 0%;
+    text-decoration: underline;
+}
+.boton:active {
+    background-color: transparent;
+    padding: 0%;
+    text-decoration: underline;
+}
+.navbar-brand img {
+    width: 91.3px;
+    height: 37.71px;
+}
+.navbar-toggler {
+    padding: 4px 4px;
+}
+.container-fluid {
+    padding: 0px 6px;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+}
+@media screen and (min-width: 379px) and (max-width: 576px) {
+    .boton {
+    background-color: transparent;
+    padding: 0%;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: none;
+    text-decoration: underline;
+}
+header h1 {
+    font-size: 3rem;
+}
+.container-fluid {
+    padding: 0 20px;
+}
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+.boton {
+    background-color: transparent;
+    padding: 0%;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: none;
+    text-decoration: underline;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+.boton {
+    background-color: transparent;
+    padding: 0;
+}
+.boton:hover{
+    background-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+}
+}
+
+/*Estilos Sección Main Porqué Wanderlust*/
+.porque-wanderlust{
+    background-color: #283a2c;
+}
+.titulo-porque-wanderlust-container {
+    padding: 8rem 3rem 0rem 3rem;
+    color:antiquewhite;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+@media screen and (min-width: 0px) and (max-width: 378px) {
+    .titulo-porque-wanderlust-container h2 {
+        font-size: 1rem;
+    }
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 379px) and (max-width: 576px) {
+    .titulo-porque-wanderlust-container h2 {
+        font-size: 1.5rem;
+    }
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3.5;
+    }     
+}
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .titulo-porque-wanderlust-container h3 {
+        font-size: 3.5;
+    }     
+}    
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    .titulo-porque-wanderlust-container {
+        padding: 5rem 3rem 0 3rem;
+    }
+}
+
+    /* Inicio media querys grilla porque wanderlust */
+    @media screen and (max-width: 991px) {
+    .grilla-porque-wanderlust {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+        margin: 0 3rem;
+        padding-bottom: 5rem;
+    }
+    .imagen-jirafa-container {
+        width: 80%;
+        margin: 2rem 0;
+    }
+    .imagen-jirafa {
+        width: 100%;
+        height: auto;
+    }
+    .parrafos-porque-wanderlust-container {
+        width: 80%;
+        text-align: center;
+        margin: 1rem;
+        color: antiquewhite;
+    }
+    .parrafos-porque-wanderlust-container p:first-child {
+        font-size: 1.2rem;
+    }
+    .parrafo-porque-wanderlust {
+        font-size: 1rem;
+        text-align: left;
+    }
+    #experiencias,
+    #atencion,
+    #asistencia {
+        width: 80%;
+        text-align: center;
+        color: antiquewhite;
+        margin: 1rem;
+    }
+    }
+    @media screen and (min-width: 992px) { 
+        .grilla-porque-wanderlust {
+            display: grid;
+            grid-template-columns: 10% 22.5% 35% 22.5% 10%;
+            grid-template-rows: 8% 10% 10% 10% 8% 10% 10% 10% 10% 14%;
+            height: 80rem;
+            place-items: center;
+            align-items: start;
+            margin: auto;
+        }
+        .imagen-jirafa-container {
+            padding: 2rem;
+            grid-column: 3/4;
+            grid-row: 1/4;
+        }
+        .imagen-jirafa {
+            width: 100%;
+            height: auto;
+        }
+        .parrafos-porque-wanderlust-container {
+            padding: 1rem 0 0 1rem;
+            color:antiquewhite;
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+        .parrafos-porque-wanderlust-container p:first-child {
+            font-size: 1.2rem;
+        }
+        .parrafo-porque-wanderlust {
+            font-size: 1rem;
+            text-align: left;
+        }
+        .list-porque-wanderlust-container {
+            color:antiquewhite;
+            width: 17rem;
+            text-align: center;
+        }
+        .list-porque-wanderlust-container p {
+            font-size: 0,5rem;
+            text-align: center;
+        }
+        #experiencias {
+            grid-column: 2/3;
+            grid-row: 3/4;
+            padding: 2rem 4rem 0 0;
+        }
+        #atencion {
+            grid-column: 2/3;
+            grid-row: 6/7;
+            padding: 2rem 0 0 4rem
+        }
+        #asistencia{
+            grid-column: 3/4;
+            grid-row: 8/9;
+            padding: 0 1rem 0 3rem;
+        }
+    }       
+    @media screen and (min-width: 1201px) {
+            .parrafos-porque-wanderlust-container p:first-child {
+                font-size: 1.4rem;
+            }
+            .parrafo-porque-wanderlust {
+                font-size: 1.2rem;
+            }
+    }
+    @media screen  and (min-width: 1401px){
+            .imagen-jirafa {
+                width: 90%;
+                height: auto;
+                margin: auto;
+            }       
+    }  
+    /* Fin media querys grilla porque wanderlust */  
+/* Fin sección main porqué wanderlust */
+
+/*Estilos Sección Ejemplos de Viajes*/
+
+.carousel-lg {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.carousel-sm {
+    margin: 0 auto 5rem auto;
+}
+.cards-wrapper {
+    display: flex;
+    justify-content: center;  
+}
+.card {
+    margin: 1rem;
+    background-image: url(../images/tailandia.jpg);
+    background-size: cover;
+    width: 357px;
+    height: 617px;
+}
+.card2 {
+    background-image: url(../images/aventurate-tanzania.jpg);
+}
+.card3 {
+    background-image: url(../images/botswana.jpg);
+}
+.card-ejemplos-viajes {
+    width: 357px;
+    height: 617px;
+    margin: 1rem;
+    display: flex;
+    align-items: end;
+}
+.boton-ej {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+    color: #ffffff;
+}
+.boton-ej:hover {
+    background-color: #fc6202;
+}
+.ejemplos-viajes-titulo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: end;
+    margin: 5rem 3rem 3rem 1rem;
+}
+.ejemplos-viajes-titulo-container h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container h3 {
+    font-size: 3rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.ejemplos-viajes-titulo-container-sm {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    justify-content: end;
+    margin: 3rem 2rem 1rem 3rem;
+}
+.ejemplos-viajes-titulo-container-sm h2 {
+    font-size: 1rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container-sm h3 {
+    font-size: 3rem;
+    text-align: left;
+}
+.ejemplos-viajes-titulo-container-sm p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    .card-sm{
+    width: 267.75px;
+    height: 462.75;
+    margin: 0 auto;
+    }
+}
+
+/*Estilos Sección Opiniones y Suscripción*/
+.seccion-suscripcion {
+    background-image: url(../images/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+.seccion-suscripcion h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+.seccion-suscripcion h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.tripadvisor-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.tripadvisor-container a {
+    color: black;
+}
+.tripadvisor-img {
+    width: 10rem;
+    height: auto;
+    margin-top: 1rem;
+}
+.estrellas-img {
+    margin-bottom: 1rem;
+}
+
+.suscripcion-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem;
+}
+.suscripcion-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+.suscripcion-form-grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+.suscripcion-form-container label:not([for="checkbox"]) {
+    display: none;
+}
+.suscripcion-form-acepta {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.suscripcion-form-grid-container input{
+    height: fit-content;  
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-suscripcion {
+        display: none;
+    }
+
+    .seccion-suscripcion-sm {
+        background-color: #f0efeb;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .seccion-suscripcion-sm h2 {
+        font-size: .8rem;
+    }
+    .seccion-suscripcion-sm h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .tripadvisor-container-sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5rem auto 5rem auto;
+    }
+    .tripadvisor-container-sm a {
+        color: black;
+    }
+    .tripadvisor-img-sm {  
+        width: 10rem;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .estrellas-img-sm {
+        margin-bottom: 1rem;
+    }
+
+    .suscripcion-container-sm {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        width: 75vw;
+        max-width: 768px;
+        min-width: 320px;
+        margin: 5rem auto 5rem auto;
+    }
+    .suscripcion-form-container-sm {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        width: 75%vw;
+    }
+    .suscripcion-form-grid-container-sm {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+
+    .suscripcion-form-grid-container-sm input{
+        font-size: smaller;
+        height: fit-content;  
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 1px solid grey;
+    }
+    .suscripcion-form-grid-container-sm label {
+        font-size: smaller;
+    }
+    .suscripcion-form-container-sm label:not([for="checkbox"]) {
+        display: none;
+    }
+    .suscripcion-img-wrapper {
+        width: 100vw;
+        min-width: 320px;
+        max-width: 768px;
+    }
+    .suscripcion-img-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+    .suscripcion-form-acepta-sm {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .seccion-suscripcion-sm {
+        display: none;
+    }
+}
+
+/*Estilos Sección Contacta un Asesor*/
+.seccion-contacta-asesor {
+    background-color: #d9ddc6;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.seccion-contacta-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 0 3rem;
+}
+.contacta-asesor-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+}
+.contacta-asesor-container h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #283a2c;
+}
+.contacta-asesor-container p {
+    font-size: 1rem;
+    font-weight: 100;
+    color: #283a2c;
+}
+.llamanos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.llamanos-container p {
+    font-family:'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #283a2c;
+    margin: 0;
+}
+.llamanos-container p:last-child {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.llamanos-container img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: .5rem;
+}
+.escribinos-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.escribinos-container p {
+    font-family:'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: #283a2c;
+}
+
+@media screen and (max-width: 768px) {
+    .seccion-contacta-asesor {
+        height: auto;
+    }
+    .seccion-contacta-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin: 5rem;
+    }
+    .contacta-asesor-container {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/*Estilos Footer*/
+.footer {
+    background-color: #283a2c;
+    height: auto;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+.footer-logo-container {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+.footer-logo-container img {
+    max-width: 100%;
+}
+.footer-googlemap-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto 1rem auto;
+    width: 50vw;
+}
+.googlemap-container iframe {
+    width: 100%;
+}
+.googlemap-container p {
+    font-size: smaller;
+}
+.footer-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    justify-content: center;
+    color: antiquewhite;
+}
+.footer-item-container ul {
+    padding: 0;
+    gap: .5rem;
+}
+.footer-direccion {
+    font-size: 1rem;
+    font-weight: 200;
+    color: antiquewhite;
+    text-align: center;
+}
+.footer-item-container h4 {
+    font-size: .8rem;
+    color: antiquewhite;
+}
+.footer-item-container p{
+    font-size: 1.3rem;
+}
+
+.footer-derechos-container {
+    font-size: .8rem;
+    font-weight: 200;
+    color: antiquewhite;
+    text-align: center;
+    margin: 1rem auto 0 auto;
+}
+
+.footer-telefono-lg-container {
+    margin-top: 3rem;
+}
+
+/*Inicio Estilos HTML Destinos*/
+
+    /*Inicio Estilos Seccion África*/
+    .seccion-africa {
+        background-color: white;
+    }
+    .articulo-africa {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        // border: 1px solid black;
+        margin: 8rem auto 8rem auto  
+    }
+    .africa-articulo-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: left;
+        flex-direction: column;
+        // border: 1px solid black;
+        width: 30vw;
+        margin-left: 5rem;
+    }
+    .africa-titulos-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: left;
+        flex-direction: column;
+        // border: 1px solid black;
+        width: 100%;
+    }
+    .africa-parrafos-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: left;
+        flex-direction: column;
+        // border: 1px solid black;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .africa-imagen-container {
+        width: 25vw;
+        // border: 1px solid black;
+        margin-right: 5rem;
+    }
+    .africa-imagen-elefantes {
+        width: 100%;
+        height: auto;
+    }
+    .articulo-africa h2 {
+        font-size: 1rem;
+    }
+    .articulo-africa h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .articulo-africa p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    @media screen and (max-width: 991px) {
+        .articulo-africa {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: column-reverse;
+            // border: 1px solid black;
+            margin: 5rem auto 5rem auto  
+
+        }
+        .africa-articulo-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: left;
+            flex-direction: column;
+            // border: 1px solid black;
+            width: 50vw;
+            margin: 0 auto;
+        }
+        .africa-titulos-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: left;
+            flex-direction: column;
+            // border: 1px solid black;
+            width: 100%;
+            margin: 0 auto;  
+        }
+        .africa-parrafos-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: left;
+            flex-direction: column;
+            // border: 1px solid black;
+            width: 100%;
+            margin: 1rem auto 0 auto;
+        }
+        .africa-imagen-container {
+            width: 50vw;
+            // border: 1px solid black;
+            margin: 2rem auto 0 auto;
+        }
+        .africa-imagen-elefantes {
+            width: 100%;
+            height: auto;
+        }
+        .articulo-africa h2 {
+            font-size: .8rem;
+        }
+        .articulo-africa h3 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .articulo-africa p {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+    }
+    
+    /*Fin Estilos Seccion África*/
+
+    /*Inicio Estilos Seccion Destinos*/
+    .seccion-destinos {
+        background-color: #f0efeb;
+    }
+    .articulo-destinos-grid {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .articulo-destinos-grid h2 {
+        font-size: 1rem;
+    }
+    .articulo-destinos-grid h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    .articulo-destinos-grid h4 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #ffffff;
+    }
+    .articulo-destinos-grid p {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+    .articulo-destinos-grid a {
+        text-decoration: none;
+    }
+    .destinos-titulos-kenia-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .destinos-titulos-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: left;
+    }
+    .destinos-titulos-container p{
+        margin-top: 1rem;
+    }
+    .img-fluid {
+        height: 50%;
+    }
+    @media screen and (max-width: 767px) {
+    .articulo-destinos-grid {
+        padding: 5rem 2rem 5rem 2rem
+    }
+    .destinos-titulos-container {
+        padding: 0 2rem 0 2rem
+    }
+    .articulo-destinos-grid h2 {
+        font-size: .8rem;
+    }
+    .articulo-destinos-grid h3 {
+        font-size: 2rem;
+    }
+    .articulo-destinos-grid h4 {
+        font-size: 1rem;
+    }
+    }
+    
+    /*Fin Estilos Seccion Destinos*/
+/*Fin Estilos HTML Destinos*/
+
+/*Inicio Estilos HTML Estilos*/
+
+    /*Inicio Sección Otros Estilos*/
+    .seccion-otros-estilos {
+        background-color: #f0efeb;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        overflow: hidden;
+    }
+    .otros-estilos-grid-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 8rem auto 8rem auto;
+    }
+    .otros-estilos-grid-fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    .articulos-otros-estilos-container {
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .articulos-otros-estilos-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+    .titulo-otros-estilos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25vw;
+    margin-bottom: 5rem;
+    }
+    .titulo-otros-estilos-container h2 {
+    font-size: 1rem;
+    }
+    .titulo-otros-estilos-container h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    }
+    .articulos-otros-estilos-container h4 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: antiquewhite;
+    }
+    .articulos-otros-estilos-container p {
+    font-size: 1rem;
+    font-weight: 100;
+    }
+    .articulos-otros-estilos-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    }
+    .articulos-otros-estilos-container a:hover,
+    .articulos-otros-estilos-container a:active {
+    color: #ffffff;
+    }
+    .parrafos-otros-estilos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 2rem;
+    }
+    .position-relative {
+    position: relative;
+    }
+    .position-absolute.centered-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    .boton-es {
+    border: 1px solid black;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    }
+    .boton-es:hover,
+    .boton-es:active {
+    background-color: #283a2c;
+    border: none;
+    }
+    .otros-estilos-margin {
+        margin-top: 9rem;
+    }
+        // Inicio Estilos Sección Otros Estilos carousel dispositivos sm y md
+        .titulo-otros-estilos-container-sm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 50vw;
+            margin-bottom: 3rem;
+        }
+        .titulo-otros-estilos-container-sm h2 {
+            font-size: 1rem;
+            }
+            .titulo-otros-estilos-container-sm h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            }
+        .articulos-otros-estilos-container-sm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 3rem;
+        }
+        .articulos-otros-estilos-container-sm img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .articulos-otros-estilos-container-sm h4 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: antiquewhite;
+        }
+        .articulos-otros-estilos-container-sm p {
+        font-size: 1rem;
+        font-weight: 100;
+        text-align: center;
+        }
+        .articulos-otros-estilos-container-sm a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+        }
+        .articulos-otros-estilos-container-sm a:hover,
+        .articulos-otros-estilos-container-sm a:active {
+        color: #ffffff;
+        }
+        // Fin Estilos Seccion Otros Estilos carousel dispositivos sm y md
+    /*Fin Sección Otros Estilos*/
+
+    /* Inicio Estilos Sección Ejemplos de Viaje (Html Estilos de Viajes) */
+    .seccion-ejemplos-viajes-estilos {
+        background-color: #f0efeb;
+        padding: 4rem 0 4rem 0;
+    }
+    .articulos-ejemplos-viajes-2 h2 {
+        font-size: 3rem;
+        text-align: left;
+    }
+    .articulos-ejemplos-viajes-2 h3{
+        font-size: 2rem;
+        text-align: left;
+    } 
+    .desde-us {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .articulos-ejemplos-viajes-2 img {
+        width: 300px;
+        height: 617px;
+    }
+    /*Fin estilos Sección Ejemplos de Viajes (Html Estilos de Viajes)*/
+/*Fin Estilos HTML Estilos*/
+
+/* Inicio Estilos HTML Nosotros*/
+/*Estilos Header*/
+.nav-nosotros a {
+    color: black;
+}
+.nav-nosotros a:hover {
+    color: black;
+}
+.nav-nosotros a:active {
+    color: black;
+}
+.boton-ns {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+}
+.boton-ns:hover {
+    background-color: #fc6202;
+}
+.boton:active {
+    background-color: #fc6202;
+}
+.main-nosotros h1 {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1rem;
+}
+.main-nosotros h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    font-size: 6rem;
+}
+.parrafos-nosotros-container {
+    color: black;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+.parrafos-nosotros-container p:first-child {
+    text-align: left;
+    font-size: 1.4rem;
+}
+.nosotros-img-wrapper {
+    width: 100vw;
+    margin: 8rem 0 8rem 0;
+}
+.nosotros-img-wrapper img {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+.nosotros-titulo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 1rem 8rem 1rem;  
+}
+.nosotros-video-container {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+@media screen and (max-width: 570px) {
+    .main-nosotros h1 {
+        font-size: 1rem;
+    }
+    .main-nosotros h2 {
+        font-size: 3rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: .8rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 571px) and (max-width: 768px){
+    .main-nosotros h1 {
+        font-size: 1rem;
+    }
+    .main-nosotros h2 {
+        font-size: 3rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .main-nosotros h1 {
+        font-size: 1.5rem;
+    }
+    .main-nosotros h2 {
+        font-size: 3.5rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .main-nosotros h1 {
+        font-size: 1rem;
+    }
+    .main-nosotros h2 {
+        font-size: 6rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1.2rem;
+    }
+    .parrafos-nosotros-container:first-child {
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1399px) {
+    .main-nosotros h1 {
+        font-size: 1.5rem;
+    }
+    .main-nosotros h2 {
+        font-size: 7rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1.3rem;
+    }
+    .parrafos-nosotros-container:first-child {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .main-nosotros h1 {
+        font-size: 1.8rem;
+    }
+    .main-nosotros h2 {
+        font-size: 8rem;
+    }
+    .parrafos-nosotros-container {
+        font-size: 1.4rem;
+    }
+    .parrafos-nosotros-container p:first-child {
+        font-size: 1.6rem;
+}
+}
+
+@media screen and (max-width: 991px) {
+    .boton-ns {
+    background-color: transparent;
+    padding: 0%;
+    margin-left: 0%;
+    color: black;
+    }
+    .boton-ns:hover{
+        background-color: transparent;
+        padding: 0%;
+        color: black;
+        text-decoration: underline;
+    }
+    .boton-ns:active {
+        background-color: transparent;
+        padding: 0%;
+        color: black;
+        text-decoration: underline;
+    }
+    .nosotros-link-consultanos a {
+        color: black
+    }
+    .nosotros-link-consultanos a:hover {
+        color: black;
+    }
+    .nosotros-link-consultanos a:active {
+        color: black;
+    }
+}
+/*Fin Estilos HTML Nosotros*/
+
+/*Inicio Estilos HTML Consultanos*/
+
+    /*Inicio Estilos Sección Main Formulario de Contacto*/
+    .main-consultanos {
+        background-color: #283a2c;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .articulo-consultanos {
+        color: antiquewhite;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .articulo-consultanos h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+    .articulo-consultanos h2 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family:'Playfair Display', serif;
+        text-align: center;
+    }
+    .llamanos-consultanos {
+        font-family:'Playfair Display', serif;
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: antiquewhite;
+        text-align: center;
+    } 
+    .telefono-consultanos {
+        font-family:'Playfair Display', serif;
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: antiquewhite;
+        text-align: center;
+    }
+    .escribinos-consultanos {
+        font-family:'Playfair Display', serif;
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: antiquewhite;
+        text-align: center;
+    }
+    .llamanos-container-consultanos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5rem auto 5rem auto;
+        border: 2px dotted antiquewhite;
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+    }
+    .llamanos-container-consultanos img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: .5rem;
+    }
+    .consultanos-form-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 3rem auto 8rem auto;
+    }
+    .suscripcion-form-acepta-consultanos {
+        display: flex;
+        flex-direction: row;
+        gap: .5rem;
+        color: antiquewhite;
+        margin: 3rem;
+    }
+    .consultanos-form-grid-container input{
+        height: fit-content;  
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 1px solid antiquewhite;
+        color: antiquewhite;
+    }
+    .consultanos-form-grid-container label {
+        color: gray;
+        font-style: italic;
+    }
+    .label-display-none {
+        display: none;
+    }
+    
+    #enviar {
+        color: antiquewhite;
+        border: 1px solid antiquewhite;
+        border-radius: 1.5rem;
+        padding: 6px 15px 6px;
+        font-size: medium;
+        margin: 0 3rem 3rem 3rem;
+    }
+    #enviar:hover {
+        border: none;
+    }
+    #nombre-consultanos {
+        width: 100%;
+    }
+    #nombre-consultanos::placeholder {
+        color: grey;
+    }
+    #apellido-consultanos {
+        width: 100%;
+    }
+    #apellido-consultanos::placeholder {
+        color: grey;
+    }
+    #email-consultanos {
+        width: 100%;
+    }
+    #email-consultanos::placeholder {
+        color: grey;
+    }
+    #telefono-consultanos {
+        width: 100%;
+    }
+    #telefono-consultanos::placeholder {
+        color: grey;
+    }
+    #viajeros-consultanos {
+        width: 100%;
+    }
+    #viajeros-consultanos::placeholder {
+        color: grey;
+    }
+    #tipo-consultanos {
+        width: 100%;
+        background-color: #283a2c;
+        color: antiquewhite;
+        border: none;
+    }
+    #tipo-consultanos::placeholder {
+        color: grey;
+    }
+    #disabled {
+        color: gray;
+    }
+    #destino-consultanos {
+        width: 100%;
+    }
+    #destino-consultanos::placeholder {
+        color: grey;
+    }
+    #inicio-consultanos {
+        width: 100%;
+    }
+    #inicio-consultanos::placeholder {
+        color: grey;
+    }
+    #finalizacion-consultanos {
+        width: 100%;
+    }
+    #finalizacion-consultanos::placeholder {
+        color: grey;
+    }
+    #planes-consultanos {
+        width: 100%;
+        background-color: #283a2c;
+        color: antiquewhite;
+        border: 1px solid antiquewhite;
+    }
+    #planes-consultanos::placeholder {
+        color: grey;
+    }
+    #planes-consultanos :active {
+        border: none;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .articulo-consultanos h1 {
+            font-size: 1.5rem;
+        }
+        .articulo-consultanos h2 {
+            font-size: 1.5rem;
+        }
+        .escribinos-consultanos {
+            font-size: 1rem;
+        }
+        .llamanos-consultanos {
+            font-size: 1rem;
+        } 
+        .telefono-consultanos {
+            font-size: 1.5rem;
+        }
+        .llamanos-container-consultanos {
+            width: 15rem;
+            height: 15rem;
+        }
+        .consultanos-form-container {
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    /*Fin Estilos Sección Main Formulario de Contacto*/
+
+    /*Inicio Estilos Sección Porqué Wanderlust Consultanos*/
+    .porque-wanderlust-consultanos {
+        background-color: #f0efeb;
+    }
+    .titulo-porque-wanderlust-container-consultanos {
+        padding: 8rem 3rem 0rem 3rem;
+        color:black;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    @media screen and (min-width: 0px) and (max-width: 378px) {
+        .titulo-porque-wanderlust-container-consultanos h2 {
+            font-size: 1rem;
+        }
+        .titulo-porque-wanderlust-container-consultanos h3 {
+            font-size: 2.5rem;
+        }
+    }
+    @media screen and (min-width: 379px) and (max-width: 576px) {
+        .titulo-porque-wanderlust-container-consultanos h2 {
+            font-size: 1.5rem;
+        }
+        .titulo-porque-wanderlust-container-consultanos h3 {
+            font-size: 3rem;
+        }
+    }
+    @media screen and (min-width: 577px) and (max-width: 768px) {
+        .titulo-porque-wanderlust-container-consultanos h3 {
+            font-size: 3.5;
+        }     
+    }
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+        .titulo-porque-wanderlust-container-consultanos h3 {
+            font-size: 3.5;
+        }     
+    }    
+    @media screen and (min-width: 992px) and (max-width:1200px) {
+        .titulo-porque-wanderlust-container-consultanos {
+            padding: 5rem 3rem 0 3rem;
+        }
+    }
+        /* Inicio media querys grilla porque wanderlust consultanos*/
+        @media screen and (max-width: 991px) {
+        .parrafos-porque-wanderlust-container-consultanos {
+            width: 80%;
+            text-align: center;
+            margin: 1rem;
+            color: black;
+        }
+        .parrafos-porque-wanderlust-container-consultanos p:first-child {
+            font-size: 1.2rem;
+        }
+        #experiencias-consultanos,
+        #atencion-consultanos,
+        #asistencia-consultanos {
+            width: 80%;
+            text-align: center;
+            color: black;
+            margin: 1rem;
+        }
+        }
+        @media screen and (min-width: 992px) { 
+            .parrafos-porque-wanderlust-container-consultanos {
+                padding: 1rem 0 0 1rem;
+                color: black;
+                grid-column: 4/5;
+                grid-row: 2/4;
+            }
+            .parrafos-porque-wanderlust-container-consultanos p:first-child {
+                font-size: 1.2rem;
+            }
+            .list-porque-wanderlust-container-consultanos {
+                color: black;
+                width: 17rem;
+                text-align: center;
+            }
+            .list-porque-wanderlust-container-consultanos p {
+                font-size: 0,5rem;
+                text-align: center;
+            }
+            #experiencias-consultanos {
+                grid-column: 2/3;
+                grid-row: 3/4;
+                padding: 2rem 4rem 0 0;
+            }
+            #atencion-consultanos {
+                grid-column: 2/3;
+                grid-row: 6/7;
+                padding: 2rem 0 0 4rem
+            }
+            #asistencia-consultanos {
+                grid-column: 3/4;
+                grid-row: 8/9;
+                padding: 0 1rem 0 3rem;
+            }
+        }       
+        @media screen and (min-width: 1201px) {
+                .parrafos-porque-wanderlust-container-consultanos p:first-child {
+                    font-size: 1.4rem;
+                }
+                .parrafo-porque-wanderlust {
+                    font-size: 1.2rem;
+                }
+        }
+    /* Fin media querys grilla porque wanderlust consultanos*/  
+    /*Fin Estilos Sección Porqué Wanderlust Consultanos*/
+
+/*Fin Estilos HTML Consultanos*/
