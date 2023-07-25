@@ -40,6 +40,9 @@
         border: none;
         border-radius: 0;
         box-shadow: 2px 6px 8px rgba(22, 22, 26, 0.18);
+        &:hover {
+            animation: pulse 1s;
+        }
     }
     .card2 {
         background-image: url(../images/aventurate-tanzania.jpg);

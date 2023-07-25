@@ -91,6 +91,9 @@
             a {
                 text-decoration: none;
             }
+            .destinos-grid-item:hover img {
+                animation: pulse 1s;
+            } 
             .destinos-titulos-kenia-container{
                 @include flex(column, space-between, center, wrap);
                 .destinos-titulos-container{
@@ -121,6 +124,7 @@
                 }
             }
         }    
-    }   
+    }  
     /*Fin Estilos Seccion Destinos*/
 /*Fin Estilos HTML Destinos*/
+

@@ -36,6 +36,9 @@
                     color: $color-antique;
                     text-align: center;
                 }
+                &:hover {
+                    animation: pulse-border 1s infinite alternate;
+                }
             }
             .escribinos-consultanos {
             font-family: $font-playfair;

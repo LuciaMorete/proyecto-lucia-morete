@@ -61,6 +61,20 @@
 .margintop-10 {
   margin-top: 10rem; }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.02); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes pulse-border {
+  from {
+    border-width: 2px; }
+  to {
+    border-width: 4px; } }
+
 /* Reseteo */
 ::after,
 ::before,
@@ -426,6 +440,8 @@ nav {
     border: none;
     border-radius: 0;
     box-shadow: 2px 6px 8px rgba(22, 22, 26, 0.18); }
+    .cards-wrapper .card:hover {
+      animation: pulse 1s; }
   .cards-wrapper .card2 {
     background-image: url(../images/aventurate-tanzania.jpg); }
   .cards-wrapper .card3 {
@@ -823,6 +839,8 @@ nav {
       font-weight: 100; }
     .seccion-destinos .articulo-destinos-grid a {
       text-decoration: none; }
+    .seccion-destinos .articulo-destinos-grid .destinos-grid-item:hover img {
+      animation: pulse 1s; }
     .seccion-destinos .articulo-destinos-grid .destinos-titulos-kenia-container {
       display: flex;
       flex-direction: column;
@@ -917,6 +935,8 @@ nav {
     top: 20%;
     left: 50%;
     transform: translateX(-50%); }
+  .position-relative:hover {
+    animation: pulse 1s; }
 
 /*Inicio Estilos Seccion Otros Estilos carousel dispositivos sm y md*/
 .titulo-otros-estilos-container-sm {
@@ -1095,6 +1115,8 @@ nav {
         font-weight: 200;
         color: antiquewhite;
         text-align: center; }
+      .main-consultanos .articulo-consultanos .llamanos-container-consultanos:hover {
+        animation: pulse-border 1s infinite alternate; }
     .main-consultanos .articulo-consultanos .escribinos-consultanos {
       font-family: "Playfair Display", serif;
       font-size: 1.2rem;
