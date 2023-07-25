@@ -1,0 +1,150 @@
+/*Inicio Estilos Sección Opiniones y Suscripción*/
+    /*Inicio Estilos Sección Opiniones y Suscripción dispositivos md y lg*/
+    .seccion-suscripcion {
+        background-image: url(../images/img-2.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 50rem;
+        max-width: 100%;
+        @include flex(column, space-between, null, null);
+        h2 {
+            font-size: 1rem;
+            text-align: center;
+        }
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            text-align: center;
+        }
+        .tripadvisor-container {
+            @include flex(column, null, center, wrap);
+            margin-top: 5rem;
+            a {
+                color: $color-negro;
+            }
+            .tripadvisor-img {
+                @include sizes(10rem, auto);
+                margin-top: 1rem;
+            }
+            .estrellas-img {
+                margin-bottom: 1rem;
+            }
+        }
+        .suscripcion-container {
+            @include flex(column, null, center, wrap);
+            margin: 5rem;
+            .suscripcion-form-container {
+                @include flex(column, null, center, wrap);
+                max-width: 100%;
+                & label:not([for="checkbox"]) {
+                    display: none;
+                }
+                .suscripcion-form-grid-container {
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    grid-template-rows: auto auto;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                    max-width: 100%;
+                    input{
+                        height: fit-content;  
+                        border: none;
+                        outline: none;
+                        background: none;
+                        border-bottom: 1px solid $color-gris;
+                    }
+                    .suscripcion-form-acepta {
+                        display: flex;
+                        flex-direction: row;
+                        gap: .5rem;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: $bpointmax-medium) {
+            display: none;
+        }   
+    }
+    /*Fin Estilos Sección Opiniones y Suscripción dispositivos md y lg*/
+    /*Inicio Estilos Sección Opiniones y Suscripción dispositivos sm*/
+    .seccion-suscripcion-sm {
+        @media screen and (max-width: $bpointmax-medium) {
+            background-color: $color-grisaceo;
+            @include flex(column, null, center, wrap);
+            h2 {
+                font-size: .8rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+            .tripadvisor-container-sm {
+                @include flex(column, null, center, null);
+                margin: 5rem auto 5rem auto;
+                a {
+                    color: $color-negro;
+                }
+                .tripadvisor-img-sm {  
+                    @include sizes(10rem, auto);
+                    margin-top: 1rem;
+                }
+                .estrellas-img-sm {
+                    margin-bottom: 1rem;
+                }    
+            }
+            .suscripcion-img-wrapper {
+                width: 100vw;
+                min-width: 320px;
+                max-width: 768px;
+                img {
+                    @include sizes(100%, auto);
+                }
+            }
+            .suscripcion-container-sm {
+                @include flex(column, null, center, wrap);
+                margin: 0 auto;
+                text-align: center;
+                width: 75vw;
+                max-width: 768px;
+                min-width: 320px;
+                margin: 5rem auto 5rem auto;
+                .suscripcion-form-container-sm {
+                    @include flex(column, null, center, wrap);
+                    max-width: 100%;
+                    width: 75%vw;
+                    label:not([for="checkbox"]) {
+                        display: none;
+                    }
+                    .suscripcion-form-grid-container-sm {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        grid-gap: 1rem;
+                        margin-bottom: 1rem;
+                        max-width: 100%;
+                        input{
+                            font-size: smaller;
+                            height: fit-content;  
+                            border: none;
+                            outline: none;
+                            background: none;
+                            border-bottom: 1px solid $color-gris;
+                            label {
+                                font-size: smaller;
+                            }
+                        }
+                        .suscripcion-form-acepta-sm {
+                            display: flex;
+                            flex-direction: row;
+                            gap: .5rem;
+                        }
+                    }
+                }
+            }
+        } 
+        @media screen and (min-width: $bpointmin-medium) {
+                display: none;
+        }  
+    }
+    /*Fin Estilos Sección Opiniones y Suscripción dispositivos sm*/
+/*Fin Estilos Sección Opiniones y Suscripción*/
+

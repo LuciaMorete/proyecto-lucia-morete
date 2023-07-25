@@ -1,0 +1,125 @@
+/*Inicio Estilos HTML Estilos*/
+    /*Inicio Sección Otros Estilos*/
+    .seccion-otros-estilos {
+        background-color: $color-grisaceo;
+        @include flex(column, null, center, wrap);
+        overflow: hidden;
+        .otros-estilos-grid-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 8rem auto 8rem auto;
+            .otros-estilos-grid-fila {
+                justify-content: center;
+                .articulos-otros-estilos-container {
+                    width: 30%;
+                    padding: 1rem;
+                    margin: 1rem;
+                    @include flex(column, null, center, null);
+                    img {
+                        @include sizes(100%, auto);
+                        object-fit: cover;
+                    }
+                    h4 {
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                        color: $color-blanco;
+                    }
+                    p {
+                        font-size: 1rem;
+                        font-weight: 100;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $color-negro;
+                        font-size: 1rem;
+                        &:hover,
+                        &:active {
+                        color: $color-blanco;
+                        }
+                    }
+                    .titulo-otros-estilos-container {
+                        text-align: center;
+                        width: 25vw;
+                        margin-bottom: 5rem;
+                        h2 {
+                            font-size: 1rem;
+                            }
+                        h3 {
+                            font-size: 2.5rem;
+                            font-weight: 600;
+                            }
+                    }
+                }
+                
+            }
+        }
+    }
+    .parrafos-otros-estilos-container {
+        @include flex(column, null, center, null);
+        text-align: center;
+        gap: 1rem;
+        width: 90%;
+        max-width: 400px;
+        margin-top: 2rem;
+    }
+    .position-relative {
+        position: relative;
+        .position-absolute.centered-text {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            }
+        }
+    /*Inicio Estilos Seccion Otros Estilos carousel dispositivos sm y md*/
+    .titulo-otros-estilos-container-sm {
+        @include flex(column, null, center, null);
+        text-align: center;
+        width: 50vw;
+        margin-bottom: 3rem;
+        h2 {
+            font-size: 1rem;
+        }
+        h3 {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    } 
+    .articulos-otros-estilos-container-sm {
+        @include flex(column, null, center, null);
+        margin: 0 3rem;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        h4 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: $color-blanco;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 100;
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: $color-negro;
+            font-size: 1rem;
+            &:hover,
+            &:active {
+            color: $color-blanco;
+            }  
+        }              
+    }
+    /*Fin Estilos Seccion Otros Estilos carousel dispositivos sm y md*/
+/*Fin Sección Otros Estilos*/
+
+    /* Inicio Estilos Sección Ejemplos de Viaje del Html Estilos*/
+    .seccion-ejemplos-viajes-estilos {
+        background-color: $color-grisaceo;
+        padding: 4rem 0 4rem 0;
+    }
+    /*Fin estilos Sección Ejemplos de Viajes del Html Estilos*/
+/*Fin Estilos HTML Estilos*/

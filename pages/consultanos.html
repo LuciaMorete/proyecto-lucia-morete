@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link rel="stylesheet" href="../css/style.css">  
         <title>Consultanos</title>
     </head>
@@ -108,43 +109,43 @@
                     <div class="row mt-3">
                         <div class="col">
                             <label for="nombre-consultanos" class="label-display-none">Nombre</label>
-                            <input type="text" name="nombre-consultanos" id="nombre-consultanos" placeholder="Nombre" data-require="">
+                            <input type="text" name="nombre-consultanos" id="nombre-consultanos" class="input-consultanos" placeholder="Nombre" data-require="">
                         </div>
                         <div class="col">
                             <label for="apellido-consultanos" class="label-display-none">Apellido</label>
-                            <input type="text" name="apellido-consultanos" id="apellido-consultanos" placeholder="Apellido" data-require="">
+                            <input type="text" name="apellido-consultanos" id="apellido-consultanos" class="input-consultanos" placeholder="Apellido" data-require="">
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col">
                             <label for="email-consultanos" class="label-display-none">Email</label>
-                            <input type="email" name="email-consultanos" id="email-consultanos" placeholder="Email" data-require="">
+                            <input type="email" name="email-consultanos" id="email-consultanos" class="input-consultanos" placeholder="Email" data-require="">
                         </div>
                         <div class="col">
                             <label for="telefono-consultanos" class="label-display-none">Teléfono</label>
-                            <input type="text" name="telefono-consultanos" id="telefono-consultanos" placeholder="Teléfono" data-require="">
+                            <input type="text" name="telefono-consultanos" id="telefono-consultanos" class="input-consultanos" placeholder="Teléfono" data-require="">
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col">
                             <label for="viajeros-consultanos" class="label-display-none">Número de viajeros</label>
-                            <input type="text" inputmode="numeric" pattern="[0-9]" name="viajeros-consultanos" id="viajeros-consultanos" placeholder="Número de viajeros" data-require="">
+                            <input type="text" inputmode="numeric" pattern="[0-9]" name="viajeros-consultanos" class="input-consultanos" id="viajeros-consultanos" placeholder="Número de viajeros" data-require="">
                         </div>
                     </div>
                     <div class="row mt-5">
                         <div class="col">
                             <label for="destino-consultanos" class="label-display-none">Destino</label>
-                            <input type="text" name="destino-consultanos" id="destino-consultanos" placeholder="Destino" data-require="">
+                            <input type="text" name="destino-consultanos" id="destino-consultanos" class="input-consultanos" placeholder="Destino" data-require="">
                         </div>
                     </div>
                     <div class="row g-4 mt-5">
                         <div class="col">
                             <label for="inicio-consultanos">Fecha de inicio de viaje</label>
-                            <input type="date" name="inicio-consultanos" id="inicio-consultanos" placeholder="Fecha de inicio de viaje" data-require="">
+                            <input type="date" name="inicio-consultanos" id="inicio-consultanos" class="input-consultanos" placeholder="Fecha de inicio de viaje" data-require="">
                         </div>
                         <div class="col">
                             <label for="finalización-consultanos">Fecha de finalización</label>
-                            <input type="date" name="finalizacion-consultanos" id="finalizacion-consultanos" placeholder="Fecha de finalización" data-require="">
+                            <input type="date" name="finalizacion-consultanos" id="finalizacion-consultanos" class="input-consultanos" placeholder="Fecha de finalización" data-require="">
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -169,7 +170,7 @@
                 </div>
                 <div class="suscripcion-form-acepta-consultanos">
                     <input type="checkbox" name="acepta-consultanos" id="acepta-consultanos">
-                    <label for="checkbox-consultanos">Suscribite a nuestro Newsletter para más inspiraciones de viajes</label>
+                    <label for="checkbox-consultanos">Suscribite a nuestro Newsletter para más inspiraciones de viajes.</label>
                 </div>
                 <input type="submit" value="ENVIAR" class="boton-ej" id="enviar">
             </form>

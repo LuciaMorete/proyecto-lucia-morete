@@ -1,0 +1,44 @@
+/*Estilos Listas*/
+ul {
+    list-style-type: none;
+}
+
+/*Estilos Textos*/
+h1 {
+    font-family: $font-playfair;
+    font-size: 5rem;
+    font-weight: 600;
+    color: $color-blanco;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+h2 {
+    font-family: $font-geologica;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+h3 {
+    font-family: $font-playfair;
+    font-size: 4rem;
+    font-weight: 600;
+}
+h4 {       
+    font-family: $font-playfair;
+    font-size: 1.5rem;
+    font-weight: 600; 
+}
+p{
+    font-family: $font-geologica; 
+}
+
+/*Estilos Forms*/
+form {
+    font-family: $font-geologica;
+    font-size: 1rem;
+    font-weight: 300;
+
+    & ::placeholder {
+        font-style: italic;
+    } 
+}
+

@@ -1,0 +1,33 @@
+// Extends Botones
+%boton-base {
+    background-color: #283a2c;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 6px 15px 6px;
+    font-size: small;
+}
+
+// Extends Header
+%header-base {
+    position: relative;
+    height: 50rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%header-base2 {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%header-title {
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+    padding: 0 20px;
+    white-space: nowrap;
+    overflow: hidden;
+}
