@@ -1,0 +1,65 @@
+/* Inicio Estilos botones*/
+    /*Inicio Estilos boton consultanos */
+    .boton {
+        @extend %boton-base;
+        &:hover,
+        &:active {
+            background-color: $color-naranja;
+        }
+        @media screen and (max-width: $bpointmax-large) {
+            background-color: transparent;
+            padding: 0;
+            margin-left: 0; 
+            &:hover,
+            &:active {
+                background-color: transparent;
+                text-decoration: underline;
+            }  
+        }
+    }
+    /*Fin Estilos boton consultanos */
+    /* Inicio Estilos boton sección ejemplos viajes*/
+    .boton-ej {
+        @extend %boton-base;
+        color: $color-blanco;
+        &:hover {
+            background-color: $color-naranja;
+        }
+    }
+    /* Fin Estilos boton sección ejemplos viajes*/
+    /* Inicio Estilos boton HTML Estilos, Sección Otros Estilos de Viajes*/
+    .boton-es {
+        border: 1px solid $color-negro;
+        border-radius: 1.5rem;
+        padding: 6px 15px 6px;
+        &:hover,
+        &:active {
+        background-color: $color-verde;
+        border: none;
+        }
+    }
+    /* Fin Estilos boton HTML Estilos, Sección Otros Estilos de Viajes*/
+    /* Inicio Estilos boton HTML Nosotros*/
+    .boton-ns {
+        @extend %boton-base;
+        &:hover, 
+        &:active {
+            background-color: $color-naranja;
+        }
+        @media screen and (max-width: $bpointmax-large) {
+            background-color: transparent;
+            padding: 0%;
+            color: $color-negro;
+            text-decoration: underline;
+            margin-left: 0%;
+            &:hover, 
+            &:active {
+                background-color: transparent;
+                padding: 0%;
+                color: $color-negro;
+                text-decoration: underline;
+            }
+        }
+    }
+    /* Fin Estilos boton HTML Nosotros*/
+/* Fin Estilos botones*/

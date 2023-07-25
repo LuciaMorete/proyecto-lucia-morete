@@ -1,0 +1,32 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+// Imports
+
+// Utilities
+@import "./utilities/variables";
+@import "./utilities/extends";
+@import "./utilities/mixins";
+@import "./utilities/maps";
+@import "./utilities/animations";
+
+// Globals
+@import "./base/resets";
+@import "./base/base";
+
+// Components
+@import "./components/botones";
+
+// Layouts
+@import "./layout/header";
+@import "./layout/seccion-porque-wanderlust";
+@import "./layout/seccion-ejemplos-viajes";
+@import "./layout/seccion-opiniones-suscripcion";
+@import "./layout/seccion-contacta-asesor";
+@import "./layout/footer";
+
+// Views
+@import "./views/destinos";
+@import "./views/estilos";
+@import "./views/nosotros";
+@import "./views/consultanos";

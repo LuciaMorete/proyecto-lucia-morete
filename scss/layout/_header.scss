@@ -1,0 +1,119 @@
+/*Inicio Estilos Header*/
+.header-index {
+    @extend %header-base;
+    background-image: url(../images/img-1.jpg);
+    .header-title{
+        @extend %header-title
+    }
+}
+.header-destinos {
+    @extend %header-base;
+    background-image: url(../images/africa.jpg);
+    .header-title{
+        @extend %header-title
+    }
+}
+.header-estilos {
+    @extend %header-base;
+    background-image: url(../images/buceo.jpg);
+    .header-title{
+        @extend %header-title
+    }
+}
+.header-nosotros {
+    @extend %header-base2;
+    background-color:$color-blanco;
+}
+.header-consultanos {
+    @extend %header-base2;
+    background-color: $color-verde;
+}
+
+    /*Inicio Estilos Nav*/
+    nav {
+        font-family: $font-geologica;
+        font-size: 0.8rem;
+        font-weight: 600;     
+        div ul a:last-child:hover {
+        text-decoration: none;
+        }
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    } 
+    .container-fluid {
+        padding: 0 60px;
+    }  
+    #navbarSupportedContent {
+        justify-content: center;
+    }
+
+    /*Estilos Nav Desplegables*/
+    .link {
+        text-decoration: none;
+        color: $color-blanco;
+        font-family: $font-geologica;
+        font-weight: 600;
+        &:hover,
+        &:active {
+        text-decoration: underline;
+        color: $color-blanco;
+        }
+    }
+    .dropdown-toggle:focus {
+        text-decoration: none;
+        color: $color-blanco; 
+    }
+    .dropdown-item {
+        font-size: small;
+        font-weight: 600;
+    }
+    .dropdown-menu {
+        border: none;
+    }
+    /*Estilos Nav HTML Nosotros*/
+    .nav-nosotros a {
+        color: $color-negro;
+        &:hover, &:active {
+            color: $color-negro;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .nosotros-link-consultanos a {
+            color: $color-negro;
+            &:hover, &:active {
+                color: $color-negro;
+            }
+        }
+    }
+    /*Fin Estilos Nav*/
+
+    /* Inicio Media querys Header */
+    @media screen and (max-width: $bpointmax-xsmall) {
+    .navbar-brand img {
+        @include sizes(91.3px, 37.71px);
+    }
+    .navbar-toggler {
+        padding: 4px 4px;
+    }
+    .container-fluid {
+        padding: 0px 6px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+    }
+    }
+    @media screen and (min-width: $bpointmin-xsmall) and (max-width: $bpointmax-small) {
+        header h1 {
+            font-size: 3rem;
+        }
+        .container-fluid {
+            padding: 0 20px;
+        }
+    }
+    /* Fin Media querys Header */
+/*Fin Estilos Header*/

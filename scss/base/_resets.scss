@@ -1,0 +1,17 @@
+/* Reseteo */
+::after,
+::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Adaptar font size html para usar em y rem*/
+html {
+    font-size: 62,5px;
+}
+
+body {
+    overflow-x: hidden;
+}

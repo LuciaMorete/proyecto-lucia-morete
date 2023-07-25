@@ -1,0 +1,59 @@
+/*Inicio Estilos Footer*/
+.footer {
+    background-color: $color-verde;
+    height: auto;
+    .footer-container {
+        @include flex(column, null, center, wrap);
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+        .footer-logo-container {
+            width: 50vw;
+            display: flex;
+            justify-content: center;
+            img {
+                max-width: 100%;
+            }
+        }
+        .footer-googlemap-container {
+            @include flex(column, null, center, null);
+            margin: 3rem auto 1rem auto;
+            width: 50vw;
+            iframe {
+                width: 100%;
+            }
+            .footer-direccion {
+                font-size: 1rem;
+                font-weight: 200;
+                color: $color-antique;
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+        .footer-item-container {
+            @include flex(column, null, center, null);
+            text-align: center;
+            margin: 1rem auto 1rem auto;
+            justify-content: center;
+            color: $color-antique;
+            ul {
+                padding: 0;
+                gap: .5rem;
+            }
+            h4 {
+                font-size: .8rem;
+                color: $color-antique;
+            }
+            p{
+                font-size: 1.3rem;
+            }
+        }
+        .footer-derechos-container {
+            font-size: .8rem;
+            font-weight: 200;
+            color: $color-antique;
+            text-align: center;
+            margin: 1rem auto 0 auto;
+        }
+    }
+}
+/*Fin Estilos Footer*/

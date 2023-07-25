@@ -1,0 +1,250 @@
+/*Inicio Estilos HTML Consultanos*/
+
+    /*Inicio Estilos Sección Main Formulario de Contacto*/
+    .main-consultanos {
+        background-color: $color-verde;
+        @include flex(column, null, center, wrap);
+        .articulo-consultanos {
+            color: $color-antique;
+            @include flex(column, center, center, wrap);
+            h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            }
+            h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            font-family: $font-playfair;
+            text-align: center;
+            }
+            .llamanos-container-consultanos {
+                @include flex(column, center, center, wrap);
+                margin: 5rem auto;
+                border: 2px dotted $color-antique;
+                border-radius: 50%;
+                width: 20rem;
+                height: 20rem;
+                img {
+                    @include sizes(50px, 50px);
+                    margin-bottom: .5rem;
+                }
+                .llamanos-consultanos,
+                .telefono-consultanos {
+                    font-family: $font-playfair;
+                    font-size: 1.5rem;
+                    font-weight: 200;
+                    color: $color-antique;
+                    text-align: center;
+                }
+                &:hover {
+                    animation: pulse-border 1s infinite alternate;
+                }
+            }
+            .escribinos-consultanos {
+            font-family: $font-playfair;
+            font-size: 1.2rem;
+            font-weight: 200;
+            color: $color-antique;
+            text-align: center;
+            }
+        }
+        .consultanos-form-container {
+            @include flex(column, null, center, wrap);
+            margin: 3rem auto 8rem auto;
+            .consultanos-form-grid-container {
+                input {
+                    height: fit-content;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    border-bottom: 1px solid $color-antique;
+                    color: $color-antique;
+                    &::placeholder {
+                    color: $color-gris;
+                    }
+                }
+                label {
+                    color: $color-gris;
+                    font-style: italic;
+                }
+                .label-display-none {
+                    display: none;
+                }
+                .input-consultanos {
+                    width: 100%;
+                    &::placeholder {
+                    color: $color-gris;
+                    }
+                }
+                #tipo-consultanos {
+                    width: 100%;
+                    background-color: $color-verde;
+                    color: $color-antique;
+                    border: none;
+                    &::placeholder {
+                    color: $color-gris;
+                    }
+                    #disabled {
+                    color: $color-gris;
+                    }
+                }
+                #planes-consultanos {
+                    width: 100%;
+                    background-color: $color-verde;
+                    color: $color-antique;
+                    border: 1px solid $color-antique;
+                    &::placeholder {
+                    color: $color-gris;
+                    }
+                    &:active {
+                    border: none;
+                    }
+                }
+            }
+            .suscripcion-form-acepta-consultanos {
+                display: flex;
+                flex-direction: row;
+                gap: .5rem;
+                color: $color-antique;
+                margin: 3rem;
+            }
+            #enviar {
+                color: $color-antique;
+                border: 1px solid $color-antique;
+                border-radius: 1.5rem;
+                padding: 6px 15px 6px;
+                font-size: medium;
+                margin: 0 3rem 3rem 3rem;
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            .articulo-consultanos {
+                h1 {
+                    font-size: 1.5rem;
+                }
+                h2 {
+                    font-size: 1.5rem;
+                }
+                .llamanos-container-consultanos {
+                    width: 15rem;
+                    height: 15rem;
+                    @include sizes(15rem, 15rem);
+                    .llamanos-consultanos {
+                    font-size: 1rem;
+                    }
+                    .telefono-consultanos {
+                    font-size: 1.5rem;
+                    }
+                }
+                .escribinos-consultanos {
+                    font-size: 1rem;
+                }
+            }
+            .consultanos-form-container {
+            width: 85%;
+            margin: 0 auto;
+            }
+        }
+    }
+    /*Fin Estilos Sección Main Formulario de Contacto*/
+
+    /*Inicio Estilos Sección Porqué Wanderlust del HTML Consultanos*/
+    .porque-wanderlust-consultanos {
+        background-color: $color-grisaceo;
+        .titulo-porque-wanderlust-container-consultanos {
+            padding: 8rem 3rem 0rem 3rem;
+            color: $color-negro;
+            @include flex(column, null, center, wrap);
+            text-align: center;
+            h2 {
+                font-size: 1.5rem;
+                @media screen and (max-width: $bpointmax-small) {
+                    font-size: 1rem;
+                }
+            }
+            h3 {
+            font-size: 4rem;
+                @media screen and (max-width: $bpointmax-xsmall) {
+                    font-size: 2.5rem;
+                }
+                @media screen and (min-width: $bpointmin-xsmall) and (max-width: $bpointmax-small) {
+                    font-size: 3rem;
+                }
+                @media screen and (min-width: $bpointmin-small) and (max-width: $bpointmax-xlarge) {
+                    font-size: 3.5rem;
+                }
+            }
+            @media screen and (min-width: $bpointmin-large) and (max-width: $bpointmax-xlarge) {
+            padding: 5rem 3rem 0 3rem;
+            }
+        }
+    }
+        /* Inicio Estilos Grilla Porque Wanderlust del HTML Consultanos*/
+        @media screen and (max-width: $bpointmax-large) {
+            .parrafos-porque-wanderlust-container-consultanos {
+                width: 80%;
+                text-align: left;
+                margin: 1rem;
+                color: $color-negro;
+                p:first-child {
+                    font-size: 1.2rem;
+                }
+            }
+            #experiencias-consultanos,
+            #atencion-consultanos,
+            #asistencia-consultanos {
+                width: 80%;
+                text-align: center;
+                color: $color-negro;
+                margin: 1rem;
+            }
+        }
+        @media screen and (min-width: $bpointmin-large) { 
+            .parrafos-porque-wanderlust-container-consultanos {
+                padding: 1rem 0 0 1rem;
+                color: $color-negro;
+                grid-column: 4/5;
+                grid-row: 2/4;
+                p:first-child {
+                    font-size: 1.2rem;
+                }
+            }
+            .list-porque-wanderlust-container-consultanos {
+                color: $color-negro;
+                width: 17rem;
+                text-align: center;
+                p {
+                    font-size: 0,5rem;
+                    text-align: center;
+                }
+            }
+            #experiencias-consultanos {
+                grid-column: 2/3;
+                grid-row: 3/4;
+                padding: 2rem 4rem 0 0;
+            }
+            #atencion-consultanos {
+                grid-column: 2/3;
+                grid-row: 6/7;
+                padding: 2rem 0 0 4rem
+            }
+            #asistencia-consultanos {
+                grid-column: 3/4;
+                grid-row: 8/9;
+                padding: 0 1rem 0 3rem;
+            }
+        }       
+        @media screen and (min-width: $bpointmin-xlarge) {
+                .parrafos-porque-wanderlust-container-consultanos p:first-child {
+                    font-size: 1.4rem;
+                }
+                .parrafo-porque-wanderlust {
+                    font-size: 1.2rem;
+                }
+        }
+        /* Fin Estilos Grilla Porque Wanderlust del HTML Consultanos*/ 
+    /*Fin Estilos Sección Porqué Wanderlust del HTML Consultanos*/
+/*Fin Estilos HTML Consultanos*/

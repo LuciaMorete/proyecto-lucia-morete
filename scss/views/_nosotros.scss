@@ -1,0 +1,86 @@
+/* Inicio Estilos HTML Nosotros*/
+.main-nosotros {
+    h1 {
+        font-family: $font-geologica;
+        font-weight: 600;
+        color: $color-negro;
+        font-size: 1rem;
+        @media screen and (max-width: $bpointmax-large){
+            font-size: 1rem;
+        }
+        @media screen and (min-width: $bpointmin-large) and (max-width: $bpointmax-xxlarge) {
+            font-size: 1.5rem;
+        }
+        @media screen and (min-width: $bpointmin-xxlarge) {
+            font-size: 1.8rem;
+        }
+    }
+    h2 {
+        font-family: $font-playfair;
+        font-weight: 600;
+        text-align: center;
+        color: $color-negro;
+        font-size: 6rem;
+        @media screen and (max-width: $bpointmax-large){
+            font-size: 4rem;
+        }
+        @media screen and (min-width: bpointmin-large) and (max-width: $bpointmax-xlarge) {
+            font-size: 6rem;
+        }
+        @media screen and (min-width: $bpointmin-xlarge) and (max-width: $bpointmax-xxlarge) {
+            font-size: 7rem;
+        }
+        @media screen and (min-width: $bpointmin-xxlarge) {
+            font-size: 8rem;
+        }
+    }
+    .nosotros-titulo-container {
+        @include flex(column, center, center, null);
+        margin: 4rem 1rem 8rem 1rem;  
+    }
+    .nosotros-video-container {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+    }
+    .parrafos-nosotros-container {
+        color: $color-negro;
+        text-align: left;
+        @include flex(column, center, center, null);
+        width: 70%;
+        margin: 0 auto;
+        gap: 1rem;
+        font-size: 1.2rem;
+        p:first-child {
+            text-align: left;
+            font-size: 1.4rem;
+        }
+        @media screen and (max-width: $bpointmax-large) {
+            font-size: 1rem;
+            p:first-child {
+                font-size: 1.2rem;
+            }
+        }
+        @media screen and (min-width: $bpointmin-large) and (max-width: $bpointmax-xxlarge) {
+            font-size: 1.3rem;
+            p:first-child {
+                font-size: 1.5rem;
+            }
+        }
+        @media screen and (min-width: $bpointmin-xxlarge) {
+            font-size: 1.7rem;
+            p:first-child {
+                font-size: 2rem;
+            }
+        }
+    }
+    .nosotros-img-wrapper {
+        width: 100vw;
+        margin: 8rem 0 8rem 0;
+        img {
+            @include sizes(100%, auto);
+            min-height: 400px;
+        }
+    }
+    
+}
+/*Fin Estilos HTML Nosotros*/
