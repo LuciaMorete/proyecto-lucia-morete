@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center; }
 
-.header-destinos .header-title, .header-index .header-title, .header-estilos .header-title {
+.header-index .header-title, .header-destinos .header-title, .header-estilos .header-title {
   width: 100%;
   text-align: center;
   z-index: 0;

@@ -7,7 +7,7 @@ function toggleCarouselVisibility() {
         $('#carouselExampleMobile').show();
     }
 }
-$(document).ready(function () {
+jQuery(document).ready(function () {
     toggleCarouselVisibility();
 });
 $(window).on('resize', function () {
