@@ -32,8 +32,6 @@
         .footer-item-container {
             @include flex(column, null, center, null);
             text-align: center;
-            margin: 1rem auto 1rem auto;
-            justify-content: center;
             color: $color-antique;
             ul {
                 padding: 0;
@@ -41,10 +39,19 @@
             }
             h4 {
                 font-size: .8rem;
-                color: $color-antique;
+                color: #b1b886;
             }
             p{
                 font-size: 1.3rem;
+            }
+            a {
+                color: $color-blanco;
+                text-decoration: none;
+                font-family: $font-geologica;
+                font-size: .8rem;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
         .footer-derechos-container {

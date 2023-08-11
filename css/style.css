@@ -138,10 +138,17 @@ form {
   .boton {
     background-color: transparent;
     padding: 0;
-    margin-left: 0; }
-    .boton:hover, .boton:active {
-      background-color: transparent;
-      text-decoration: underline; } }
+    margin-left: 0; } }
+
+@media screen and (max-width: 992px) {
+  .btn-success:active {
+    background-color: transparent !important;
+    text-decoration: underline !important; } }
+
+@media screen and (max-width: 992px) {
+  .btn-success:hover {
+    background-color: transparent !important;
+    text-decoration: underline !important; } }
 
 /*Fin Estilos boton consultanos */
 /* Inicio Estilos boton sección ejemplos viajes*/
@@ -182,13 +189,13 @@ form {
 /* Fin Estilos botones*/
 /*Inicio Estilos Header*/
 .header-index {
-  background-image: url(../images/img-1.jpg); }
+  background-image: url(../../images/img-1.webp); }
 
 .header-destinos {
-  background-image: url(../images/africa.jpg); }
+  background-image: url(../../images/africa.webp); }
 
 .header-estilos {
-  background-image: url(../images/buceo.jpg); }
+  background-image: url(../../images/buceo.webp); }
 
 .header-nosotros {
   background-color: #ffffff; }
@@ -234,6 +241,8 @@ nav {
 .dropdown-item {
   font-size: small;
   font-weight: 600; }
+  .dropdown-item:active {
+    background-color: #ffffff; }
 
 .dropdown-menu {
   border: none; }
@@ -257,7 +266,8 @@ nav {
     width: 91.3px;
     height: 37.71px; }
   .navbar-toggler {
-    padding: 4px 4px; }
+    padding: 4px 4px;
+    color: #f0efeb; }
   .container-fluid {
     padding: 0px 6px; }
   header h1 {
@@ -433,7 +443,6 @@ nav {
     align-items: end; }
   .cards-wrapper .card {
     margin: 1rem;
-    background-image: url(../images/tailandia.jpg);
     background-size: cover;
     width: 357px;
     height: 617px;
@@ -442,10 +451,56 @@ nav {
     box-shadow: 2px 6px 8px rgba(22, 22, 26, 0.18); }
     .cards-wrapper .card:hover {
       animation: pulse 1s; }
-  .cards-wrapper .card2 {
-    background-image: url(../images/aventurate-tanzania.jpg); }
-  .cards-wrapper .card3 {
-    background-image: url(../images/botswana.jpg); }
+    .cards-wrapper .card .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      margin-bottom: 1rem;
+      padding: 1.5rem; }
+      .cards-wrapper .card .card-body .card-title {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+      .cards-wrapper .card .card-body .card-text {
+        font-family: "Geologica", sans-serif;
+        color: #ffffff;
+        font-size: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+      .cards-wrapper .card .card-body span {
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        color: #ffffff;
+        margin-left: .5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); }
+      .cards-wrapper .card .card-body .card-precio {
+        display: inline-block; }
+  .cards-wrapper .card-1 {
+    background-image: url(../images/tailandia.webp); }
+  .cards-wrapper .card-2 {
+    background-image: url(../images/aventurate-tanzania.webp); }
+  .cards-wrapper .card-3 {
+    background-image: url(../images/botswana.webp); }
+  .cards-wrapper .card-4 {
+    background-image: url(../images/suecia.webp); }
+  .cards-wrapper .card-5 {
+    background-image: url(../images/raja-ampat.webp); }
+  .cards-wrapper .card-6 {
+    background-image: url(../images/noruega.webp); }
+  .cards-wrapper .card-7 {
+    background-image: url(../images/tanzania-zanzibar.webp); }
+  .cards-wrapper .card-8 {
+    background-image: url(../images/kenia-cultural.webp); }
+  .cards-wrapper .card-9 {
+    background-image: url(../images/mar-rojo.webp); }
+  .cards-wrapper .card-10 {
+    background-image: url(../images/safari-familia.webp); }
+  .cards-wrapper .card-11 {
+    background-image: url(../images/komodo.webp); }
+  .cards-wrapper .card-12 {
+    background-image: url(../images/maldivas.webp); }
+  .cards-wrapper .card-13 {
+    background-image: url(../images/kakadu.webp); }
 
 .ejemplos-viajes-titulo-container {
   display: flex;
@@ -490,7 +545,7 @@ nav {
 /*Inicio Estilos Sección Opiniones y Suscripción*/
 /*Inicio Estilos Sección Opiniones y Suscripción dispositivos md y lg*/
 .seccion-suscripcion {
-  background-image: url(../images/img-2.jpg);
+  background-image: url(../images/img-2.webp);
   background-position: center;
   background-size: cover;
   height: 50rem;
@@ -550,6 +605,8 @@ nav {
           display: flex;
           flex-direction: row;
           gap: .5rem; }
+        .seccion-suscripcion .suscripcion-container .suscripcion-form-container .suscripcion-form-grid-container input[type="checkbox"] {
+          accent-color: #fc6202; }
   @media screen and (max-width: 768px) {
     .seccion-suscripcion {
       display: none; } }
@@ -626,7 +683,9 @@ nav {
           .seccion-suscripcion-sm .suscripcion-container-sm .suscripcion-form-container-sm .suscripcion-form-grid-container-sm .suscripcion-form-acepta-sm {
             display: flex;
             flex-direction: row;
-            gap: .5rem; } }
+            gap: .5rem; }
+          .seccion-suscripcion-sm .suscripcion-container-sm .suscripcion-form-container-sm .suscripcion-form-grid-container-sm input[type="checkbox"] {
+            accent-color: #fc6202; } }
 
 @media screen and (min-width: 769px) {
   .seccion-suscripcion-sm {
@@ -741,17 +800,22 @@ nav {
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 1rem auto 1rem auto;
-      justify-content: center;
       color: antiquewhite; }
       .footer .footer-container .footer-item-container ul {
         padding: 0;
         gap: .5rem; }
       .footer .footer-container .footer-item-container h4 {
         font-size: .8rem;
-        color: antiquewhite; }
+        color: #b1b886; }
       .footer .footer-container .footer-item-container p {
         font-size: 1.3rem; }
+      .footer .footer-container .footer-item-container a {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: "Geologica", sans-serif;
+        font-size: .8rem; }
+        .footer .footer-container .footer-item-container a:hover {
+          text-decoration: underline; }
     .footer .footer-container .footer-derechos-container {
       font-size: .8rem;
       font-weight: 200;
@@ -1128,7 +1192,7 @@ nav {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin: 3rem auto 8rem auto; }
+    margin: 0 auto 8rem auto; }
     .main-consultanos .consultanos-form-container .consultanos-form-grid-container input {
       height: fit-content;
       border: none;
@@ -1165,12 +1229,17 @@ nav {
         color: gray; }
       .main-consultanos .consultanos-form-container .consultanos-form-grid-container #planes-consultanos:active {
         border: none; }
+    @media screen and (max-width: 567px) {
+      .main-consultanos .consultanos-form-container .consultanos-form-grid-container .col-md {
+        width: 100%; } }
     .main-consultanos .consultanos-form-container .suscripcion-form-acepta-consultanos {
       display: flex;
       flex-direction: row;
       gap: .5rem;
       color: antiquewhite;
       margin: 3rem; }
+      .main-consultanos .consultanos-form-container .suscripcion-form-acepta-consultanos input[type="checkbox"] {
+        accent-color: #fc6202; }
     .main-consultanos .consultanos-form-container #enviar {
       color: antiquewhite;
       border: 1px solid antiquewhite;
@@ -1286,3 +1355,13 @@ nav {
 /* Fin Estilos Grilla Porque Wanderlust del HTML Consultanos*/
 /*Fin Estilos Sección Porqué Wanderlust del HTML Consultanos*/
 /*Fin Estilos HTML Consultanos*/
+/*Inicio Estilos HTML Página Construcción*/
+.construccion-img-container {
+  width: 100vw;
+  margin: 0 auto; }
+  .construccion-img-container img {
+    width: 100%;
+    height: auto;
+    min-height: 400px; }
+
+/*Fin Estilos HTML Página Construcción*/

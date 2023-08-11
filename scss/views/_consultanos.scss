@@ -50,7 +50,7 @@
         }
         .consultanos-form-container {
             @include flex(column, null, center, wrap);
-            margin: 3rem auto 8rem auto;
+            margin: 0 auto 8rem auto;
             .consultanos-form-grid-container {
                 input {
                     height: fit-content;
@@ -100,6 +100,11 @@
                     border: none;
                     }
                 }
+                @media screen and (max-width: 567px) {
+                    .col-md {
+                    width: 100%;
+                    }
+                }
             }
             .suscripcion-form-acepta-consultanos {
                 display: flex;
@@ -107,6 +112,9 @@
                 gap: .5rem;
                 color: $color-antique;
                 margin: 3rem;
+                input[type="checkbox"]{
+                    accent-color: $color-naranja;
+                }
             }
             #enviar {
                 color: $color-antique;

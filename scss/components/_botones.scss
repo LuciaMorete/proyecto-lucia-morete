@@ -10,12 +10,19 @@
             background-color: transparent;
             padding: 0;
             margin-left: 0; 
-            &:hover,
-            &:active {
-                background-color: transparent;
-                text-decoration: underline;
-            }  
         }
+    }
+    .btn-success:active {
+        @media screen and (max-width: $bpointmax-large) {
+        background-color: transparent !important;
+        text-decoration: underline !important;
+    }
+    }
+    .btn-success:hover {
+        @media screen and (max-width: $bpointmax-large) {
+        background-color: transparent !important;
+        text-decoration: underline !important;
+    }
     }
     /*Fin Estilos boton consultanos */
     /* Inicio Estilos boton sección ejemplos viajes*/

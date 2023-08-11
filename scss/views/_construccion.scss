@@ -1,0 +1,10 @@
+/*Inicio Estilos HTML Página Construcción*/
+.construccion-img-container {
+    width: 100vw;
+    margin: 0 auto;
+    img {
+        @include sizes(100%, auto);
+        min-height: 400px;
+    }
+}
+/*Fin Estilos HTML Página Construcción*/

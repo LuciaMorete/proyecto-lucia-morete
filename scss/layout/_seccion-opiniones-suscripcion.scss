@@ -1,7 +1,7 @@
 /*Inicio Estilos Sección Opiniones y Suscripción*/
     /*Inicio Estilos Sección Opiniones y Suscripción dispositivos md y lg*/
     .seccion-suscripcion {
-        background-image: url(../images/img-2.jpg);
+        background-image: url(../images/img-2.webp);
         background-position: center;
         background-size: cover;
         height: 50rem;
@@ -57,6 +57,9 @@
                         display: flex;
                         flex-direction: row;
                         gap: .5rem;
+                    }
+                    input[type="checkbox"]{
+                        accent-color: $color-naranja;
                     }
                 }
             }
@@ -137,6 +140,9 @@
                             flex-direction: row;
                             gap: .5rem;
                         }
+                        input[type="checkbox"]{
+                            accent-color: $color-naranja;
+                        }
                     }
                 }
             }
@@ -147,4 +153,3 @@
     }
     /*Fin Estilos Sección Opiniones y Suscripción dispositivos sm*/
 /*Fin Estilos Sección Opiniones y Suscripción*/
-

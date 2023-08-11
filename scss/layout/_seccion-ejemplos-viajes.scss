@@ -33,7 +33,6 @@
     } 
     .card {
         margin: 1rem;
-        background-image: url(../images/tailandia.jpg);
         background-size: cover;
         width: 357px;
         height: 617px;
@@ -43,14 +42,76 @@
         &:hover {
             animation: pulse 1s;
         }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            margin-bottom: 1rem;
+            padding: 1.5rem;
+            .card-title {
+                font-family: $font-playfair;
+                font-size: 30px;
+                color: $color-blanco;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            }
+            .card-text {
+                font-family: $font-geologica;
+                color: $color-blanco;
+                font-size: 15px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            }
+            span {
+                font-family: $font-playfair;
+                font-size: 20px;
+                color: $color-blanco;
+                margin-left: .5rem;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+                }
+            .card-precio {
+                display: inline-block;
+            }
+        }
+        
     }
-    .card2 {
-        background-image: url(../images/aventurate-tanzania.jpg);
+    .card-1 {
+        background-image: url(../images/tailandia.webp);
     }
-    .card3 {
-        background-image: url(../images/botswana.jpg);
+    .card-2 {
+        background-image: url(../images/aventurate-tanzania.webp);
     }
-    
+    .card-3 {
+        background-image: url(../images/botswana.webp);
+    }
+    .card-4 {
+        background-image: url(../images/suecia.webp);
+    }
+    .card-5 {
+        background-image: url(../images/raja-ampat.webp);
+    }
+    .card-6 {
+        background-image: url(../images/noruega.webp);
+    }
+    .card-7 {
+        background-image: url(../images/tanzania-zanzibar.webp);
+    }
+    .card-8 {
+        background-image: url(../images/kenia-cultural.webp);
+    }
+    .card-9 {
+        background-image: url(../images/mar-rojo.webp);
+    }
+    .card-10 {
+        background-image: url(../images/safari-familia.webp);
+    }
+    .card-11 {
+        background-image: url(../images/komodo.webp);
+    }
+    .card-12 {
+        background-image: url(../images/maldivas.webp);
+    }
+    .card-13 {
+        background-image: url(../images/kakadu.webp);
+    }
 }
 .ejemplos-viajes-titulo-container {
     @include flex(column, end, right, null);

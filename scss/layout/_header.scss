@@ -1,21 +1,21 @@
 /*Inicio Estilos Header*/
 .header-index {
     @extend %header-base;
-    background-image: url(../images/img-1.jpg);
+    background-image: url(../../images/img-1.webp);
     .header-title{
         @extend %header-title
     }
 }
 .header-destinos {
     @extend %header-base;
-    background-image: url(../images/africa.jpg);
+    background-image: url(../../images/africa.webp);
     .header-title{
         @extend %header-title
     }
 }
 .header-estilos {
     @extend %header-base;
-    background-image: url(../images/buceo.jpg);
+    background-image: url(../../images/buceo.webp);
     .header-title{
         @extend %header-title
     }
@@ -51,7 +51,7 @@
     #navbarSupportedContent {
         justify-content: center;
     }
-
+    
     /*Estilos Nav Desplegables*/
     .link {
         text-decoration: none;
@@ -71,6 +71,9 @@
     .dropdown-item {
         font-size: small;
         font-weight: 600;
+        &:active {
+            background-color: $color-blanco;
+        }
     }
     .dropdown-menu {
         border: none;
@@ -99,6 +102,7 @@
     }
     .navbar-toggler {
         padding: 4px 4px;
+        color: $color-grisaceo;
     }
     .container-fluid {
         padding: 0px 6px;
