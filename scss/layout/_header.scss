@@ -1,21 +1,21 @@
 /*Inicio Estilos Header*/
 .header-index {
     @extend %header-base;
-    background-image: url(../images/img-1.webp);
+    background-image: url(../images/img-1.jpg);
     .header-title{
         @extend %header-title
     }
 }
 .header-destinos {
     @extend %header-base;
-    background-image: url(../images/africa.webp);
+    background-image: url(../images/africa.jpg);
     .header-title{
         @extend %header-title
     }
 }
 .header-estilos {
     @extend %header-base;
-    background-image: url(../images/buceo.webp);
+    background-image: url(../images/buceo.jpg);
     .header-title{
         @extend %header-title
     }
