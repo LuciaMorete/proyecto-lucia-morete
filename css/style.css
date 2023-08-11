@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center; }
 
-.header-index .header-title, .header-destinos .header-title, .header-estilos .header-title {
+.header-destinos .header-title, .header-index .header-title, .header-estilos .header-title {
   width: 100%;
   text-align: center;
   z-index: 0;
@@ -189,13 +189,13 @@ form {
 /* Fin Estilos botones*/
 /*Inicio Estilos Header*/
 .header-index {
-  background-image: url(../../images/img-1.webp); }
+  background-image: url(../images/img-1.jpg); }
 
 .header-destinos {
-  background-image: url(../../images/africa.webp); }
+  background-image: url(../images/africa.jpg); }
 
 .header-estilos {
-  background-image: url(../../images/buceo.webp); }
+  background-image: url(../images/buceo.jpg); }
 
 .header-nosotros {
   background-color: #ffffff; }
