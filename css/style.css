@@ -8,7 +8,7 @@
   padding: 6px 15px 6px;
   font-size: small; }
 
-.header-africa, .header-index, .header-estilos {
+.header-index, .header-destinos, .header-estilos {
   position: relative;
   height: 50rem;
   background-size: cover;
@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center; }
 
-.header-africa .header-title, .header-index .header-title, .header-estilos .header-title {
+.header-index .header-title, .header-destinos .header-title, .header-estilos .header-title {
   width: 100%;
   text-align: center;
   z-index: 0;
@@ -188,14 +188,14 @@ form {
 /* Fin Estilos boton HTML Nosotros*/
 /* Fin Estilos botones*/
 /*Inicio Estilos Header*/
-.header-africa {
-  background-image: url(../images/africa.webp); }
-
 .header-index {
   background-image: url(../images/img-1.webp); }
 
+.header-destinos {
+  background-image: url(../images/africa.webp); }
+
 .header-estilos {
-  background-image: url(../images/img-1.webp); }
+  background-image: url(../images/buceo.webp); }
 
 .header-nosotros {
   background-color: #ffffff; }
