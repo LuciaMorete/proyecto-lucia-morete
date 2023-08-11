@@ -8,14 +8,14 @@
 }
 .header-destinos {
     @extend %header-base;
-    background-image: url(../images/africa.jpg);
+    background-image: url(../images/africa.webp);
     .header-title{
         @extend %header-title
     }
 }
 .header-estilos {
     @extend %header-base;
-    background-image: url(../images/buceo.jpg);
+    background-image: url(../images/buceo.webp);
     .header-title{
         @extend %header-title
     }
